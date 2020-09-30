@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cq-pension-business.iml" filepath="$PROJECT_DIR$/.idea/cq-pension-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-common/cq-pension-common.iml" filepath="$PROJECT_DIR$/cq-pension-common/cq-pension-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-mapper/cq-pension-mapper.iml" filepath="$PROJECT_DIR$/cq-pension-mapper/cq-pension-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-model/cq-pension-model.iml" filepath="$PROJECT_DIR$/cq-pension-model/cq-pension-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-parent/cq-pension-parent.iml" filepath="$PROJECT_DIR$/cq-pension-parent/cq-pension-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-service-api/cq-pension-service-api.iml" filepath="$PROJECT_DIR$/cq-pension-service-api/cq-pension-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-service-provider/cq-pension-service-provider.iml" filepath="$PROJECT_DIR$/cq-pension-service-provider/cq-pension-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cq-pension-web/cq-pension-web.iml" filepath="$PROJECT_DIR$/cq-pension-web/cq-pension-web.iml" />
+    </modules>
+  </component>
+</project>
