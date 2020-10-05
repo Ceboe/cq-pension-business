@@ -79,8 +79,8 @@ public class HealAssServiceImpl implements HealAssService {
         Example.Criteria criteria = example.createCriteria();
         if(healAss!=null){
             // id
-            if(!StringUtils.isEmpty(healAss.getHa-id())){
-                    criteria.andEqualTo("ha-id",healAss.getHa-id());
+            if(!StringUtils.isEmpty(healAss.getHaId())){
+                    criteria.andEqualTo("ha-id",healAss.getHaId());
             }
             // 老人id
             if(!StringUtils.isEmpty(healAss.getOpId())){

@@ -84,7 +84,7 @@ public class HealAssController {
     @PutMapping(value="/{id}")
     public Result update(@RequestBody HealAss healAss, @PathVariable Integer id){
         //设置主键值
-        healAss.setHa-id(id);
+        healAss.setHaId(id);
         //调用HealAssService实现修改HealAss
         healAssService.update(healAss);
         return new Result(true,StatusCode.OK,"修改成功");
