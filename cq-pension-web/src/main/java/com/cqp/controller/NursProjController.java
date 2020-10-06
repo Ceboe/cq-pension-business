@@ -69,7 +69,7 @@ public class NursProjController {
      * @return
      */
     @DeleteMapping(value = "/{id}" )
-    public Result delete(@PathVariable String id){
+    public Result delete(@PathVariable Integer id){
         //调用NursProjService实现根据主键删除
         nursProjService.delete(id);
         return new Result(true,StatusCode.OK,"删除成功");
@@ -82,7 +82,7 @@ public class NursProjController {
      * @return
      */
     @PutMapping(value="/{id}")
-    public Result update(@RequestBody NursProj nursProj, @PathVariable String id){
+    public Result update(@RequestBody NursProj nursProj, @PathVariable Integer id){
         //设置主键值
         nursProj.setNpId(id);
         //调用NursProjService实现修改NursProj
@@ -108,7 +108,7 @@ public class NursProjController {
      * @return
      */
     @GetMapping("/{id}")
-    public Result<NursProj> findById(@PathVariable String id){
+    public Result<NursProj> findById(@PathVariable Integer id){
         //调用NursProjService实现根据主键查询NursProj
         NursProj nursProj = nursProjService.findById(id);
         return new Result<NursProj>(true,StatusCode.OK,"查询成功",nursProj);

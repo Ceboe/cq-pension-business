@@ -90,11 +90,11 @@ public class LiveServiceImpl implements LiveService {
             if(!StringUtils.isEmpty(live.getLiveTime())){
                     criteria.andEqualTo("liveTime",live.getLiveTime());
             }
-            // 床位编号
+            // 入住的床位编号
             if(!StringUtils.isEmpty(live.getBedId())){
                     criteria.andEqualTo("bedId",live.getBedId());
             }
-            // 入驻协议
+            // 入住协议地址
             if(!StringUtils.isEmpty(live.getLivePro())){
                     criteria.andEqualTo("livePro",live.getLivePro());
             }

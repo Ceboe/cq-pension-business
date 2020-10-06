@@ -107,7 +107,7 @@ public class NursProjServiceImpl implements NursProjService {
      * @param id
      */
     @Override
-    public void delete(String id){
+    public void delete(Integer id){
         nursProjMapper.deleteByPrimaryKey(id);
     }
 
@@ -135,7 +135,7 @@ public class NursProjServiceImpl implements NursProjService {
      * @return
      */
     @Override
-    public NursProj findById(String id){
+    public NursProj findById(Integer id){
         return  nursProjMapper.selectByPrimaryKey(id);
     }
 

@@ -80,7 +80,7 @@ public class HealAssServiceImpl implements HealAssService {
         if(healAss!=null){
             // id
             if(!StringUtils.isEmpty(healAss.getHaId())){
-                    criteria.andEqualTo("ha-id",healAss.getHaId());
+                    criteria.andEqualTo("haId",healAss.getHaId());
             }
             // 老人id
             if(!StringUtils.isEmpty(healAss.getOpId())){

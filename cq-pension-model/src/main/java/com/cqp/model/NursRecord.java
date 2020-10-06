@@ -28,7 +28,7 @@ public class NursRecord implements Serializable{
 	private Date endTime;//结束时间
 
     @Column(name = "np_id")
-	private String npId;//护理项编号
+	private Integer npId;//护理项编号
 
     @Column(name = "nn_des")
 	private String nnDes;//详细描述
@@ -84,12 +84,12 @@ public class NursRecord implements Serializable{
 		this.endTime = endTime;
 	}
 	//get方法
-	public String getNpId() {
+	public Integer getNpId() {
 		return npId;
 	}
 
 	//set方法
-	public void setNpId(String npId) {
+	public void setNpId(Integer npId) {
 		this.npId = npId;
 	}
 	//get方法

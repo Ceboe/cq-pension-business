@@ -82,15 +82,15 @@ public class OpeopleServiceImpl implements OpeopleService {
             if(!StringUtils.isEmpty(opeople.getOpId())){
                     criteria.andEqualTo("opId",opeople.getOpId());
             }
-            // 姓名
+            // 老人姓名
             if(!StringUtils.isEmpty(opeople.getOpName())){
                     criteria.andEqualTo("opName",opeople.getOpName());
             }
-            // 年龄
+            // 老人年龄
             if(!StringUtils.isEmpty(opeople.getOpAge())){
                     criteria.andEqualTo("opAge",opeople.getOpAge());
             }
-            // 性别
+            // 老人性别
             if(!StringUtils.isEmpty(opeople.getOpSex())){
                     criteria.andEqualTo("opSex",opeople.getOpSex());
             }
@@ -98,25 +98,25 @@ public class OpeopleServiceImpl implements OpeopleService {
             if(!StringUtils.isEmpty(opeople.getOpNative())){
                     criteria.andEqualTo("opNative",opeople.getOpNative());
             }
-            // 生日
-            if(!StringUtils.isEmpty(opeople.getOpBirthday())){
-                    criteria.andEqualTo("opBirthday",opeople.getOpBirthday());
-            }
             // 住址
             if(!StringUtils.isEmpty(opeople.getOpAddress())){
                     criteria.andEqualTo("opAddress",opeople.getOpAddress());
-            }
-            // 身份证号
-            if(!StringUtils.isEmpty(opeople.getOpCard())){
-                    criteria.andEqualTo("opCard",opeople.getOpCard());
             }
             // 照片
             if(!StringUtils.isEmpty(opeople.getOpPhoto())){
                     criteria.andEqualTo("opPhoto",opeople.getOpPhoto());
             }
-            // 电话
+            // 身份证
+            if(!StringUtils.isEmpty(opeople.getOpCard())){
+                    criteria.andEqualTo("opCard",opeople.getOpCard());
+            }
+            // 联系电话
             if(!StringUtils.isEmpty(opeople.getOpPhone())){
                     criteria.andEqualTo("opPhone",opeople.getOpPhone());
+            }
+            // 出生日期
+            if(!StringUtils.isEmpty(opeople.getOpBirthday())){
+                    criteria.andEqualTo("opBirthday",opeople.getOpBirthday());
             }
         }
         return example;

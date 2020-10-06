@@ -28,7 +28,7 @@ public class Employeemanage implements Serializable{
 	private String emmInc;//是否在职
 
     @Column(name = "emm_salary")
-	private Double emmSalary;//资薪
+	private String emmSalary;//资薪
 
     @Column(name = "emm_etime")
 	private Date emmEtime;//入职时间
@@ -75,12 +75,12 @@ public class Employeemanage implements Serializable{
 		this.emmInc = emmInc;
 	}
 	//get方法
-	public Double getEmmSalary() {
+	public String getEmmSalary() {
 		return emmSalary;
 	}
 
 	//set方法
-	public void setEmmSalary(Double emmSalary) {
+	public void setEmmSalary(String emmSalary) {
 		this.emmSalary = emmSalary;
 	}
 	//get方法

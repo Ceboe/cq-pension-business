@@ -57,7 +57,7 @@ public class OpeopleController {
      * @return
      */
     @PostMapping(value = "/search" )
-    public Result<List<Opeople>> findList(@RequestBody(required = false)  Opeople opeople){
+    public Result<List<Opeople>> findList(@RequestBody(required = false) Opeople opeople){
         //调用OpeopleService实现条件查询Opeople
         List<Opeople> list = opeopleService.findList(opeople);
         return new Result<List<Opeople>>(true,StatusCode.OK,"查询成功",list);
@@ -82,7 +82,7 @@ public class OpeopleController {
      * @return
      */
     @PutMapping(value="/{id}")
-    public Result update(@RequestBody  Opeople opeople,@PathVariable Integer id){
+    public Result update(@RequestBody Opeople opeople, @PathVariable Integer id){
         //设置主键值
         opeople.setOpId(id);
         //调用OpeopleService实现修改Opeople
@@ -96,7 +96,7 @@ public class OpeopleController {
      * @return
      */
     @PostMapping
-    public Result add(@RequestBody   Opeople opeople){
+    public Result add(@RequestBody Opeople opeople){
         //调用OpeopleService实现添加Opeople
         opeopleService.add(opeople);
         return new Result(true,StatusCode.OK,"添加成功");

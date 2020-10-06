@@ -15,10 +15,7 @@ public class Permissions implements Serializable{
 
 	@Id
     @Column(name = "per_id")
-	private Integer perId;//权限表ID
-
-    @Column(name = "rp_id")
-	private Integer rpId;//记录编号
+	private Integer perId;//权限ID
 
     @Column(name = "per_name")
 	private String perName;//名称
@@ -42,15 +39,6 @@ public class Permissions implements Serializable{
 	//set方法
 	public void setPerId(Integer perId) {
 		this.perId = perId;
-	}
-	//get方法
-	public Integer getRpId() {
-		return rpId;
-	}
-
-	//set方法
-	public void setRpId(Integer rpId) {
-		this.rpId = rpId;
 	}
 	//get方法
 	public String getPerName() {

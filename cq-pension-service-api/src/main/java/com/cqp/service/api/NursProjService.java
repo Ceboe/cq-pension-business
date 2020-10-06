@@ -1,6 +1,5 @@
 package com.cqp.service.api;
 
-
 import com.cqp.model.NursProj;
 import com.github.pagehelper.PageInfo;
 
@@ -41,7 +40,7 @@ public interface NursProjService {
      * 删除NursProj
      * @param id
      */
-    void delete(String id);
+    void delete(Integer id);
 
     /***
      * 修改NursProj数据
@@ -60,7 +59,7 @@ public interface NursProjService {
      * @param id
      * @return
      */
-     NursProj findById(String id);
+     NursProj findById(Integer id);
 
     /***
      * 查询所有NursProj

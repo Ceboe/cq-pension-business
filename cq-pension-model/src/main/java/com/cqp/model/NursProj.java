@@ -15,7 +15,7 @@ public class NursProj implements Serializable{
 
 	@Id
     @Column(name = "np_id")
-	private String npId;//护理项编号
+	private Integer npId;//护理项编号
 
     @Column(name = "na_name")
 	private String naName;//护理项名称
@@ -32,12 +32,12 @@ public class NursProj implements Serializable{
 
 
 	//get方法
-	public String getNpId() {
+	public Integer getNpId() {
 		return npId;
 	}
 
 	//set方法
-	public void setNpId(String npId) {
+	public void setNpId(Integer npId) {
 		this.npId = npId;
 	}
 	//get方法

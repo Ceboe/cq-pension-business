@@ -25,10 +25,10 @@ public class Live implements Serializable{
 	private Date liveTime;//入住时间
 
     @Column(name = "bed_id")
-	private Integer bedId;//床位编号
+	private Integer bedId;//入住的床位编号
 
     @Column(name = "live_pro")
-	private String livePro;//入驻协议
+	private String livePro;//入住协议地址
 
     @Column(name = "end_time")
 	private Date endTime;//退住时间

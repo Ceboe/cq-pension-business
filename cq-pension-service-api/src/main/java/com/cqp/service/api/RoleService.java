@@ -1,6 +1,5 @@
 package com.cqp.service.api;
 
-
 import com.cqp.model.Role;
 import com.github.pagehelper.PageInfo;
 

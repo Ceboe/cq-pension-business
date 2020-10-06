@@ -78,13 +78,9 @@ public class PermissionsServiceImpl implements PermissionsService {
         Example example=new Example(Permissions.class);
         Example.Criteria criteria = example.createCriteria();
         if(permissions!=null){
-            // 权限表ID
+            // 权限ID
             if(!StringUtils.isEmpty(permissions.getPerId())){
                     criteria.andEqualTo("perId",permissions.getPerId());
-            }
-            // 记录编号
-            if(!StringUtils.isEmpty(permissions.getRpId())){
-                    criteria.andEqualTo("rpId",permissions.getRpId());
             }
             // 名称
             if(!StringUtils.isEmpty(permissions.getPerName())){

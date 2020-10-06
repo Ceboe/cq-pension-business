@@ -1,6 +1,5 @@
 package com.cqp.service.api;
 
-
 import com.cqp.model.Permissions;
 import com.github.pagehelper.PageInfo;
 
