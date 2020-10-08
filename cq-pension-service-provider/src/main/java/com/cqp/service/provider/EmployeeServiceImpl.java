@@ -127,8 +127,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                     criteria.andEqualTo("empCard",employee.getEmpCard());
             }
             //
-            if(!StringUtils.isEmpty(employee.getEmp())){
-                    criteria.andEqualTo("emp",employee.getEmp());
+            if(!StringUtils.isEmpty(employee.getEmpEdu())){
+                    criteria.andEqualTo("emp",employee.getEmpEdu());
             }
         }
         return example;

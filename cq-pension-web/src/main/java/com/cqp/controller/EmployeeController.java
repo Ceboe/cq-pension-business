@@ -95,7 +95,7 @@ public class EmployeeController {
      * @param employee
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Employee employee){
         //调用EmployeeService实现添加Employee
         employeeService.add(employee);
@@ -118,7 +118,7 @@ public class EmployeeController {
      * 查询Employee全部数据
      * @return
      */
-    @GetMapping
+    @GetMapping("/findAll")
     public Result<List<Employee>> findAll(){
         //调用EmployeeService实现查询所有Employee
         List<Employee> list = employeeService.findAll();
