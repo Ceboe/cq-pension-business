@@ -25,13 +25,13 @@ public class Employee implements Serializable{
 	private String empSex;//性别
 
     @Column(name = "emp_birthday")
-	private Integer empBirthday;//年龄
+	private Date empBirthday;//出生日期
 
     @Column(name = "emp_phone")
-	private Date empPhone;//电话
+	private Integer empPhone;//电话
 
     @Column(name = "emp_email")
-	private Integer empEmail;//电子邮件
+	private String empEmail;//电子邮件
 
     @Column(name = "emp_add")
 	private String empAdd;//地址
@@ -52,7 +52,7 @@ public class Employee implements Serializable{
 	private String empCard;//身份证号
 
     @Column(name = "emp_")
-	private String emp;//
+	private String empEdu;//最高学历
 
 
 
@@ -84,30 +84,30 @@ public class Employee implements Serializable{
 		this.empSex = empSex;
 	}
 	//get方法
-	public Integer getEmpBirthday() {
+	public Date getEmpBirthday() {
 		return empBirthday;
 	}
 
 	//set方法
-	public void setEmpBirthday(Integer empBirthday) {
+	public void setEmpBirthday(Date empBirthday) {
 		this.empBirthday = empBirthday;
 	}
 	//get方法
-	public Date getEmpPhone() {
+	public Integer getEmpPhone() {
 		return empPhone;
 	}
 
 	//set方法
-	public void setEmpPhone(Date empPhone) {
+	public void setEmpPhone(Integer empPhone) {
 		this.empPhone = empPhone;
 	}
 	//get方法
-	public Integer getEmpEmail() {
+	public String getEmpEmail() {
 		return empEmail;
 	}
 
 	//set方法
-	public void setEmpEmail(Integer empEmail) {
+	public void setEmpEmail(String empEmail) {
 		this.empEmail = empEmail;
 	}
 	//get方法
@@ -165,13 +165,13 @@ public class Employee implements Serializable{
 		this.empCard = empCard;
 	}
 	//get方法
-	public String getEmp() {
-		return emp;
+	public String getEmpEdu() {
+		return empEdu;
 	}
 
 	//set方法
-	public void setEmp(String emp) {
-		this.emp = emp;
+	public void setEmp(String empEdu) {
+		this.empEdu = empEdu;
 	}
 
 

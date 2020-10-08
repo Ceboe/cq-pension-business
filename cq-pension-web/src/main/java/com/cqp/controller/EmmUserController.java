@@ -124,4 +124,19 @@ public class EmmUserController {
         List<EmmUser> list = emmUserService.findAll();
         return new Result<List<EmmUser>>(true, StatusCode.OK,"查询成功",list) ;
     }
+
+    /***
+     * 登录验证
+     * @param emmUser
+     * @return
+     */
+    @PostMapping("/login")
+    public Result login(@RequestBody EmmUser emmUser){
+        //调用EmmUserService实现添加EmmUser
+        List<EmmUser> list = emmUserService.findList(emmUser);
+        if(list.size() == 0){
+            return new Result(true,StatusCode.LOGINERROR,"登录失败：账号或密码错误，请检查您的输入！");
+        }
+        return new Result(true,StatusCode.OK,"登录成功");
+    }
 }
