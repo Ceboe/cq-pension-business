@@ -95,7 +95,7 @@ public class EmmUserController {
      * @param emmUser
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody EmmUser emmUser){
         //调用EmmUserService实现添加EmmUser
         emmUserService.add(emmUser);

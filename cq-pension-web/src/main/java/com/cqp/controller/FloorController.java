@@ -95,7 +95,7 @@ public class FloorController {
      * @param floor
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Floor floor){
         //调用FloorService实现添加Floor
         floorService.add(floor);

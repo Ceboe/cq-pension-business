@@ -95,7 +95,7 @@ public class NursPlanController {
      * @param nursPlan
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody NursPlan nursPlan){
         //调用NursPlanService实现添加NursPlan
         nursPlanService.add(nursPlan);

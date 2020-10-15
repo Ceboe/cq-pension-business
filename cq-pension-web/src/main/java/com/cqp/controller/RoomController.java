@@ -95,7 +95,7 @@ public class RoomController {
      * @param room
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Room room){
         //调用RoomService实现添加Room
         roomService.add(room);
@@ -118,7 +118,7 @@ public class RoomController {
      * 查询Room全部数据
      * @return
      */
-    @GetMapping
+    @GetMapping("/findAll")
     public Result<List<Room>> findAll(){
         //调用RoomService实现查询所有Room
         List<Room> list = roomService.findAll();

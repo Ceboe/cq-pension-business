@@ -95,7 +95,7 @@ public class OutController {
      * @param out
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Out out){
         //调用OutService实现添加Out
         outService.add(out);

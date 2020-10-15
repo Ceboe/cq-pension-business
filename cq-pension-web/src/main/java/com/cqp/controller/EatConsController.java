@@ -95,7 +95,7 @@ public class EatConsController {
      * @param eatCons
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody EatCons eatCons){
         //调用EatConsService实现添加EatCons
         eatConsService.add(eatCons);

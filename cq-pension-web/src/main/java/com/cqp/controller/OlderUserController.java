@@ -95,7 +95,7 @@ public class OlderUserController {
      * @param olderUser
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody OlderUser olderUser){
         //调用OlderUserService实现添加OlderUser
         olderUserService.add(olderUser);

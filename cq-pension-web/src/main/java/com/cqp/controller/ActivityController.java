@@ -95,7 +95,7 @@ public class ActivityController {
      * @param activity
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Activity activity){
         //调用ActivityService实现添加Activity
         activityService.add(activity);

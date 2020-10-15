@@ -95,7 +95,7 @@ public class MaterialController {
      * @param material
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Material material){
         //调用MaterialService实现添加Material
         materialService.add(material);

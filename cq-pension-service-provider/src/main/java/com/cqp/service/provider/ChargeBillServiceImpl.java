@@ -119,8 +119,9 @@ public class ChargeBillServiceImpl implements ChargeBillService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        chargeBillMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        int result = chargeBillMapper.deleteByPrimaryKey(id);
+        return result;
     }
 
     /**
@@ -128,8 +129,9 @@ public class ChargeBillServiceImpl implements ChargeBillService {
      * @param chargeBill
      */
     @Override
-    public void update(ChargeBill chargeBill){
-        chargeBillMapper.updateByPrimaryKey(chargeBill);
+    public int update(ChargeBill chargeBill){
+        int result = chargeBillMapper.updateByPrimaryKey(chargeBill);
+        return result;
     }
 
     /**
@@ -137,8 +139,9 @@ public class ChargeBillServiceImpl implements ChargeBillService {
      * @param chargeBill
      */
     @Override
-    public void add(ChargeBill chargeBill){
-        chargeBillMapper.insert(chargeBill);
+    public int add(ChargeBill chargeBill){
+        int result = chargeBillMapper.insert(chargeBill);
+        return result;
     }
 
     /**

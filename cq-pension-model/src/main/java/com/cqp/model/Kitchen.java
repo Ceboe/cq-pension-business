@@ -16,7 +16,7 @@ public class Kitchen implements Serializable{
 
 	@Id
     @Column(name = "k_id")
-	private Integer kId;//菜品编号
+	private Integer kid;//记录编号
 
     @Column(name = "time")
 	private Date time;//时间
@@ -43,12 +43,12 @@ public class Kitchen implements Serializable{
 
 	//get方法
 	public Integer getKId() {
-		return kId;
+		return kid;
 	}
 
 	//set方法
 	public void setKId(Integer kId) {
-		this.kId = kId;
+		this.kid = kId;
 	}
 	//get方法
 	public Date getTime() {

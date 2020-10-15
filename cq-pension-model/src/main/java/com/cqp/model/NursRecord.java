@@ -16,7 +16,7 @@ public class NursRecord implements Serializable{
 
 	@Id
     @Column(name = "n_id")
-	private Integer nId;//记录编号
+	private Integer nid;//记录编号
 
     @Column(name = "op_id")
 	private Integer opId;//老人编号
@@ -49,12 +49,12 @@ public class NursRecord implements Serializable{
 
 	//get方法
 	public Integer getNId() {
-		return nId;
+		return nid;
 	}
 
 	//set方法
 	public void setNId(Integer nId) {
-		this.nId = nId;
+		this.nid = nId;
 	}
 	//get方法
 	public Integer getOpId() {

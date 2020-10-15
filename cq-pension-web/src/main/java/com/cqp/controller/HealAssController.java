@@ -95,7 +95,7 @@ public class HealAssController {
      * @param healAss
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody HealAss healAss){
         //调用HealAssService实现添加HealAss
         healAssService.add(healAss);

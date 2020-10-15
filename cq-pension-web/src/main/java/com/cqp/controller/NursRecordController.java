@@ -95,7 +95,7 @@ public class NursRecordController {
      * @param nursRecord
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody NursRecord nursRecord){
         //调用NursRecordService实现添加NursRecord
         nursRecordService.add(nursRecord);

@@ -95,7 +95,7 @@ public class JoinActController {
      * @param joinAct
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody JoinAct joinAct){
         //调用JoinActService实现添加JoinAct
         joinActService.add(joinAct);

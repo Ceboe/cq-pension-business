@@ -1,5 +1,7 @@
 package com.cqp.model;
 
+
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -21,10 +23,10 @@ public class BedRepl implements Serializable{
 	private Integer opId;//老人编号
 
     @Column(name = "o_bed_id")
-	private Integer oBedId;//原床位编号
+	private Integer obedId;//原床位编号
 
     @Column(name = "n_bed_id")
-	private Integer nBedId;//新床位编号
+	private Integer nbedId;//新床位编号
 
     @Column(name = "charge")
 	private String charge;//负责人
@@ -54,21 +56,21 @@ public class BedRepl implements Serializable{
 	}
 	//get方法
 	public Integer getOBedId() {
-		return oBedId;
+		return obedId;
 	}
 
 	//set方法
 	public void setOBedId(Integer oBedId) {
-		this.oBedId = oBedId;
+		this.obedId = oBedId;
 	}
 	//get方法
 	public Integer getNBedId() {
-		return nBedId;
+		return nbedId;
 	}
 
 	//set方法
 	public void setNBedId(Integer nBedId) {
-		this.nBedId = nBedId;
+		this.nbedId = nBedId;
 	}
 	//get方法
 	public String getCharge() {

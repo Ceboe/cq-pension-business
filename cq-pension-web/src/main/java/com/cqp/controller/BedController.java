@@ -95,7 +95,7 @@ public class BedController {
      * @param bed
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Bed bed){
         //调用BedService实现添加Bed
         bedService.add(bed);
@@ -118,7 +118,7 @@ public class BedController {
      * 查询Bed全部数据
      * @return
      */
-    @GetMapping
+    @GetMapping("/findAll")
     public Result<List<Bed>> findAll(){
         //调用BedService实现查询所有Bed
         List<Bed> list = bedService.findAll();

@@ -95,7 +95,7 @@ public class PriceEatController {
      * @param priceEat
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody PriceEat priceEat){
         //调用PriceEatService实现添加PriceEat
         priceEatService.add(priceEat);

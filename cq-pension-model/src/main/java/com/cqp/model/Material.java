@@ -15,16 +15,16 @@ public class Material implements Serializable{
 
 	@Id
     @Column(name = "m_id")
-	private Integer mId;//物资编号
+	private Integer mid;//物资编号
 
     @Column(name = "m_name")
-	private String mName;//物资号
+	private String mname;//物资号
 
     @Column(name = "m_descrip")
-	private String mDescrip;//说明
+	private String mdescrip;//说明
 
     @Column(name = "m_price")
-	private String mPrice;//价格
+	private String mprice;//价格
 
     @Column(name = "depr_rate")
 	private String deprRate;//折旧率
@@ -48,39 +48,39 @@ public class Material implements Serializable{
 
 	//get方法
 	public Integer getMId() {
-		return mId;
+		return mid;
 	}
 
 	//set方法
 	public void setMId(Integer mId) {
-		this.mId = mId;
+		this.mid = mId;
 	}
 	//get方法
 	public String getMName() {
-		return mName;
+		return mname;
 	}
 
 	//set方法
 	public void setMName(String mName) {
-		this.mName = mName;
+		this.mname = mName;
 	}
 	//get方法
 	public String getMDescrip() {
-		return mDescrip;
+		return mdescrip;
 	}
 
 	//set方法
 	public void setMDescrip(String mDescrip) {
-		this.mDescrip = mDescrip;
+		this.mdescrip = mDescrip;
 	}
 	//get方法
 	public String getMPrice() {
-		return mPrice;
+		return mprice;
 	}
 
 	//set方法
 	public void setMPrice(String mPrice) {
-		this.mPrice = mPrice;
+		this.mprice = mPrice;
 	}
 	//get方法
 	public String getDeprRate() {

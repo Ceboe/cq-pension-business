@@ -95,7 +95,7 @@ public class OpeopleController {
      * @param opeople
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Opeople opeople){
         //调用OpeopleService实现添加Opeople
         opeopleService.add(opeople);

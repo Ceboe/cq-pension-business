@@ -40,19 +40,19 @@ public interface ChargeBillService {
      * 删除ChargeBill
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改ChargeBill数据
      * @param chargeBill
      */
-    void update(ChargeBill chargeBill);
+    int update(ChargeBill chargeBill);
 
     /***
      * 新增ChargeBill
      * @param chargeBill
      */
-    void add(ChargeBill chargeBill);
+    int add(ChargeBill chargeBill);
 
     /**
      * 根据ID查询ChargeBill

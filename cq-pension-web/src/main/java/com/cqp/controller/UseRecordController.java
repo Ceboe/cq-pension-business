@@ -95,7 +95,7 @@ public class UseRecordController {
      * @param useRecord
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody UseRecord useRecord){
         //调用UseRecordService实现添加UseRecord
         useRecordService.add(useRecord);

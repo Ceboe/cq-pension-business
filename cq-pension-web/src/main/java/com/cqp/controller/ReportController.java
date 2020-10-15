@@ -95,7 +95,7 @@ public class ReportController {
      * @param report
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Report report){
         //调用ReportService实现添加Report
         reportService.add(report);

@@ -27,10 +27,10 @@ public class PriceEat implements Serializable{
 	private Integer peSpec;//规格编号
 
     @Column(name = "m_make")
-	private String mMake;//套餐组成
+	private String mmake;//套餐组成
 
     @Column(name = "m_person")
-	private String mPerson;//套餐配置人
+	private String mperson;//套餐配置人
 
 
 
@@ -72,21 +72,21 @@ public class PriceEat implements Serializable{
 	}
 	//get方法
 	public String getMMake() {
-		return mMake;
+		return mmake;
 	}
 
 	//set方法
-	public void setMMake(String mMake) {
-		this.mMake = mMake;
+	public void setMMake(String mmake) {
+		this.mmake = mmake;
 	}
 	//get方法
 	public String getMPerson() {
-		return mPerson;
+		return mperson;
 	}
 
 	//set方法
 	public void setMPerson(String mPerson) {
-		this.mPerson = mPerson;
+		this.mperson = mPerson;
 	}
 
 

@@ -95,7 +95,7 @@ public class LiveController {
      * @param live
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Live live){
         //调用LiveService实现添加Live
         liveService.add(live);

@@ -95,7 +95,7 @@ public class BedReplController {
      * @param bedRepl
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody BedRepl bedRepl){
         //调用BedReplService实现添加BedRepl
         bedReplService.add(bedRepl);

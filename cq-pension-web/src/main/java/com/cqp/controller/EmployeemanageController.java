@@ -95,7 +95,7 @@ public class EmployeemanageController {
      * @param employeemanage
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Employeemanage employeemanage){
         //调用EmployeemanageService实现添加Employeemanage
         employeemanageService.add(employeemanage);

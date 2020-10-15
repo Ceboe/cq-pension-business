@@ -37,7 +37,6 @@ public class ChargeBillController {
         PageInfo<ChargeBill> pageInfo = chargeBillService.findPage(chargeBill, page, size);
         return new Result(true,StatusCode.OK,"查询成功",pageInfo);
     }
-
     /***
      * ChargeBill分页搜索实现
      * @param page:当前页
@@ -71,8 +70,10 @@ public class ChargeBillController {
     @DeleteMapping(value = "/{id}" )
     public Result delete(@PathVariable Integer id){
         //调用ChargeBillService实现根据主键删除
-        chargeBillService.delete(id);
+        int result = chargeBillService.delete(id);
+        if(result>=1)
         return new Result(true,StatusCode.OK,"删除成功");
+        else return new Result(true,StatusCode.ERROR,"删除失败");
     }
 
     /***
@@ -95,7 +96,7 @@ public class ChargeBillController {
      * @param chargeBill
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody ChargeBill chargeBill){
         //调用ChargeBillService实现添加ChargeBill
         chargeBillService.add(chargeBill);
@@ -118,7 +119,7 @@ public class ChargeBillController {
      * 查询ChargeBill全部数据
      * @return
      */
-    @GetMapping
+    @GetMapping("/findAll")
     public Result<List<ChargeBill>> findAll(){
         //调用ChargeBillService实现查询所有ChargeBill
         List<ChargeBill> list = chargeBillService.findAll();

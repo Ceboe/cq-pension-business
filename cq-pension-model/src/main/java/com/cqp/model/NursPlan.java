@@ -15,7 +15,7 @@ public class NursPlan implements Serializable{
 
 	@Id
     @Column(name = "n_id")
-	private Integer nId;//计划编号
+	private Integer nid;//计划编号
 
     @Column(name = "op_id")
 	private Integer opId;//老人编号
@@ -39,12 +39,12 @@ public class NursPlan implements Serializable{
 
 	//get方法
 	public Integer getNId() {
-		return nId;
+		return nid;
 	}
 
 	//set方法
 	public void setNId(Integer nId) {
-		this.nId = nId;
+		this.nid = nId;
 	}
 	//get方法
 	public Integer getOpId() {

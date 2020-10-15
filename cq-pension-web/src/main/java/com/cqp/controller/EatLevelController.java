@@ -95,7 +95,7 @@ public class EatLevelController {
      * @param eatLevel
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody EatLevel eatLevel){
         //调用EatLevelService实现添加EatLevel
         eatLevelService.add(eatLevel);

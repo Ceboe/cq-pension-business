@@ -95,7 +95,7 @@ public class PhyExamController {
      * @param phyExam
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody PhyExam phyExam){
         //调用PhyExamService实现添加PhyExam
         phyExamService.add(phyExam);

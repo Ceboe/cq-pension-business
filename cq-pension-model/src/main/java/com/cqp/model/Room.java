@@ -23,8 +23,8 @@ public class Room implements Serializable{
     @Column(name = "room_num")
 	private Integer roomNum;//房号
 
-    @Column(name = "room_type")
-	private String roomType;//房间类型
+    @Column(name = "bed_num")
+	private int bedNum;//房间数
 
     @Column(name = "room_sun")
 	private String roomSun;//是否向阳
@@ -62,13 +62,13 @@ public class Room implements Serializable{
 		this.roomNum = roomNum;
 	}
 	//get方法
-	public String getRoomType() {
-		return roomType;
+	public int getRoomType() {
+		return bedNum;
 	}
 
 	//set方法
-	public void setRoomType(String roomType) {
-		this.roomType = roomType;
+	public void setRoomType(int bedNum) {
+		this.bedNum = bedNum;
 	}
 	//get方法
 	public String getRoomSun() {

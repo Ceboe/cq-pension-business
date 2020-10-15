@@ -95,7 +95,7 @@ public class PersonEatController {
      * @param personEat
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody PersonEat personEat){
         //调用PersonEatService实现添加PersonEat
         personEatService.add(personEat);

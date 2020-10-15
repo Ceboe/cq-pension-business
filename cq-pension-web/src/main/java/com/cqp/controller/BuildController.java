@@ -95,7 +95,7 @@ public class BuildController {
      * @param build
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Build build){
         //调用BuildService实现添加Build
         buildService.add(build);

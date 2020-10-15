@@ -95,7 +95,7 @@ public class DutyRecordController {
      * @param dutyRecord
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody DutyRecord dutyRecord){
         //调用DutyRecordService实现添加DutyRecord
         dutyRecordService.add(dutyRecord);

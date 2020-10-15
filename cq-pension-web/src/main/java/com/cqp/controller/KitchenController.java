@@ -95,7 +95,7 @@ public class KitchenController {
      * @param kitchen
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Kitchen kitchen){
         //调用KitchenService实现添加Kitchen
         kitchenService.add(kitchen);

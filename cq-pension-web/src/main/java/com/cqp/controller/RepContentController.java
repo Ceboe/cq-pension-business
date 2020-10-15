@@ -95,7 +95,7 @@ public class RepContentController {
      * @param repContent
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody RepContent repContent){
         //调用RepContentService实现添加RepContent
         repContentService.add(repContent);

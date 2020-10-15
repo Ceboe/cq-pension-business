@@ -95,7 +95,7 @@ public class RolePermController {
      * @param rolePerm
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody RolePerm rolePerm){
         //调用RolePermService实现添加RolePerm
         rolePermService.add(rolePerm);

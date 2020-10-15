@@ -95,7 +95,7 @@ public class PermissionsController {
      * @param permissions
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Permissions permissions){
         //调用PermissionsService实现添加Permissions
         permissionsService.add(permissions);

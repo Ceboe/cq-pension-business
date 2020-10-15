@@ -95,7 +95,7 @@ public class RoleController {
      * @param role
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Role role){
         //调用RoleService实现添加Role
         roleService.add(role);

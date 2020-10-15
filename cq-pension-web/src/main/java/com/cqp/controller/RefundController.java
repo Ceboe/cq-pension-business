@@ -95,7 +95,7 @@ public class RefundController {
      * @param refund
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Refund refund){
         //调用RefundService实现添加Refund
         refundService.add(refund);

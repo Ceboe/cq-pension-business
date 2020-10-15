@@ -95,7 +95,7 @@ public class IllHistoryController {
      * @param illHistory
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody IllHistory illHistory){
         //调用IllHistoryService实现添加IllHistory
         illHistoryService.add(illHistory);

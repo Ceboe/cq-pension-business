@@ -95,7 +95,7 @@ public class LogController {
      * @param log
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Log log){
         //调用LogService实现添加Log
         logService.add(log);

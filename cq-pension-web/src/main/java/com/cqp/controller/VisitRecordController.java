@@ -95,7 +95,7 @@ public class VisitRecordController {
      * @param visitRecord
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody VisitRecord visitRecord){
         //调用VisitRecordService实现添加VisitRecord
         visitRecordService.add(visitRecord);

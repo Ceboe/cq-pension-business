@@ -95,7 +95,7 @@ public class IllRecordController {
      * @param illRecord
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody IllRecord illRecord){
         //调用IllRecordService实现添加IllRecord
         illRecordService.add(illRecord);

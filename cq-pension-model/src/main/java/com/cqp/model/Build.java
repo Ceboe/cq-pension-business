@@ -1,5 +1,6 @@
 package com.cqp.model;
 
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,45 +17,45 @@ public class Build implements Serializable{
 
 	@Id
     @Column(name = "b_id")
-	private Integer bId;//楼房编号
+	private Integer bid;//楼房编号
 
     @Column(name = "b_name")
-	private String bName;//名称
+	private String bname;//名称
 
     @Column(name = "fl_num")
 	private Integer flNum;//层数
 
     @Column(name = "b_time")
-	private Date bTime;//建成时间
+	private Date btime;//建成时间
 
     @Column(name = "b_per")
-	private String bPer;//用途
+	private String bper;//用途
 
     @Column(name = "dev_charge")
 	private String devCharge;//建设负责人
 
     @Column(name = "b_charge")
-	private String bCharge;//楼房负责人
+	private String bcharge;//楼房负责人
 
 
 
 	//get方法
 	public Integer getBId() {
-		return bId;
+		return bid;
 	}
 
 	//set方法
 	public void setBId(Integer bId) {
-		this.bId = bId;
+		this.bid = bId;
 	}
 	//get方法
 	public String getBName() {
-		return bName;
+		return bname;
 	}
 
 	//set方法
 	public void setBName(String bName) {
-		this.bName = bName;
+		this.bname = bName;
 	}
 	//get方法
 	public Integer getFlNum() {
@@ -67,21 +68,21 @@ public class Build implements Serializable{
 	}
 	//get方法
 	public Date getBTime() {
-		return bTime;
+		return btime;
 	}
 
 	//set方法
 	public void setBTime(Date bTime) {
-		this.bTime = bTime;
+		this.btime = bTime;
 	}
 	//get方法
 	public String getBPer() {
-		return bPer;
+		return bper;
 	}
 
 	//set方法
 	public void setBPer(String bPer) {
-		this.bPer = bPer;
+		this.bper = bPer;
 	}
 	//get方法
 	public String getDevCharge() {
@@ -94,12 +95,12 @@ public class Build implements Serializable{
 	}
 	//get方法
 	public String getBCharge() {
-		return bCharge;
+		return bcharge;
 	}
 
 	//set方法
 	public void setBCharge(String bCharge) {
-		this.bCharge = bCharge;
+		this.bcharge = bCharge;
 	}
 
 

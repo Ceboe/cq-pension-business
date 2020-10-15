@@ -28,7 +28,7 @@ public class Employee implements Serializable{
 	private Date empBirthday;//出生日期
 
     @Column(name = "emp_phone")
-	private Integer empPhone;//电话
+	private Long empPhone;//电话
 
     @Column(name = "emp_email")
 	private String empEmail;//电子邮件
@@ -51,7 +51,7 @@ public class Employee implements Serializable{
     @Column(name = "emp_card")
 	private String empCard;//身份证号
 
-    @Column(name = "emp_")
+    @Column(name = "emp_edu")
 	private String empEdu;//最高学历
 
 
@@ -93,12 +93,12 @@ public class Employee implements Serializable{
 		this.empBirthday = empBirthday;
 	}
 	//get方法
-	public Integer getEmpPhone() {
+	public Long getEmpPhone() {
 		return empPhone;
 	}
 
 	//set方法
-	public void setEmpPhone(Integer empPhone) {
+	public void setEmpPhone(Long empPhone) {
 		this.empPhone = empPhone;
 	}
 	//get方法

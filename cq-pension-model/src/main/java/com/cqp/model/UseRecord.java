@@ -19,7 +19,7 @@ public class UseRecord implements Serializable{
 	private Integer urId;//记录编号
 
     @Column(name = "m_id")
-	private Integer mId;//物资编号
+	private Integer mid;//物资编号
 
     @Column(name = "applicant")
 	private String applicant;//申请人
@@ -55,12 +55,12 @@ public class UseRecord implements Serializable{
 	}
 	//get方法
 	public Integer getMId() {
-		return mId;
+		return mid;
 	}
 
 	//set方法
 	public void setMId(Integer mId) {
-		this.mId = mId;
+		this.mid = mId;
 	}
 	//get方法
 	public String getApplicant() {

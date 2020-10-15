@@ -118,7 +118,7 @@ public class FamilyController {
      * 查询Family全部数据
      * @return
      */
-    @GetMapping
+    @GetMapping("/add")
     public Result<List<Family>> findAll(){
         //调用FamilyService实现查询所有Family
         List<Family> list = familyService.findAll();

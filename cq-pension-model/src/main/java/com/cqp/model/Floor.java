@@ -18,16 +18,16 @@ public class Floor implements Serializable{
 	private Integer flId;//楼层编号
 
     @Column(name = "b_id")
-	private Integer bId;//楼房编号
+	private Integer bid;//楼房编号
 
     @Column(name = "r_num")
-	private Integer rNum;//房间数量
+	private Integer rnum;//房间数量
 
     @Column(name = "fl_name")
 	private String flName;//楼层名称
 
     @Column(name = "fl_charge")
-	private String flCharge;//
+	private String flCharge;//楼层负责人
 
 
 
@@ -42,21 +42,21 @@ public class Floor implements Serializable{
 	}
 	//get方法
 	public Integer getBId() {
-		return bId;
+		return bid;
 	}
 
 	//set方法
 	public void setBId(Integer bId) {
-		this.bId = bId;
+		this.bid = bId;
 	}
 	//get方法
 	public Integer getRNum() {
-		return rNum;
+		return rnum;
 	}
 
 	//set方法
 	public void setRNum(Integer rNum) {
-		this.rNum = rNum;
+		this.rnum = rNum;
 	}
 	//get方法
 	public String getFlName() {
