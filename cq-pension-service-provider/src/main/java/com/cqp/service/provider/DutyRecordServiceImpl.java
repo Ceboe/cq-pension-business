@@ -111,8 +111,8 @@ public class DutyRecordServiceImpl implements DutyRecordService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        dutyRecordMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return dutyRecordMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class DutyRecordServiceImpl implements DutyRecordService {
      * @param dutyRecord
      */
     @Override
-    public void update(DutyRecord dutyRecord){
-        dutyRecordMapper.updateByPrimaryKey(dutyRecord);
+    public int update(DutyRecord dutyRecord){
+        return dutyRecordMapper.updateByPrimaryKey(dutyRecord);
     }
 
     /**
@@ -129,8 +129,8 @@ public class DutyRecordServiceImpl implements DutyRecordService {
      * @param dutyRecord
      */
     @Override
-    public void add(DutyRecord dutyRecord){
-        dutyRecordMapper.insert(dutyRecord);
+    public int add(DutyRecord dutyRecord){
+        return dutyRecordMapper.insert(dutyRecord);
     }
 
     /**

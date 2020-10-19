@@ -40,19 +40,19 @@ public interface DutyRecordService {
      * 删除DutyRecord
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改DutyRecord数据
      * @param dutyRecord
      */
-    void update(DutyRecord dutyRecord);
+    int update(DutyRecord dutyRecord);
 
     /***
      * 新增DutyRecord
      * @param dutyRecord
      */
-    void add(DutyRecord dutyRecord);
+    int add(DutyRecord dutyRecord);
 
     /**
      * 根据ID查询DutyRecord

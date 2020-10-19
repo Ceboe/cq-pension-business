@@ -78,10 +78,6 @@ public class RolePermServiceImpl implements RolePermService {
         Example example=new Example(RolePerm.class);
         Example.Criteria criteria = example.createCriteria();
         if(rolePerm!=null){
-            // 角色权限ID
-            if(!StringUtils.isEmpty(rolePerm.getRpId())){
-                    criteria.andEqualTo("rpId",rolePerm.getRpId());
-            }
             // 角色ID
             if(!StringUtils.isEmpty(rolePerm.getRoleId())){
                     criteria.andEqualTo("roleId",rolePerm.getRoleId());

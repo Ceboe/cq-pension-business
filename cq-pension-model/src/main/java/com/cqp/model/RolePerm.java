@@ -14,9 +14,6 @@ import java.io.Serializable;
 public class RolePerm implements Serializable{
 
 	@Id
-    @Column(name = "rp_id")
-	private Integer rpId;//角色权限ID
-
     @Column(name = "role_id")
 	private Integer roleId;//角色ID
 
@@ -28,15 +25,6 @@ public class RolePerm implements Serializable{
 
 
 
-	//get方法
-	public Integer getRpId() {
-		return rpId;
-	}
-
-	//set方法
-	public void setRpId(Integer rpId) {
-		this.rpId = rpId;
-	}
 	//get方法
 	public Integer getRoleId() {
 		return roleId;

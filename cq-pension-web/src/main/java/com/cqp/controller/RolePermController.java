@@ -84,7 +84,7 @@ public class RolePermController {
     @PutMapping(value="/{id}")
     public Result update(@RequestBody RolePerm rolePerm, @PathVariable Integer id){
         //设置主键值
-        rolePerm.setRpId(id);
+        rolePerm.setRoleId(id);
         //调用RolePermService实现修改RolePerm
         rolePermService.update(rolePerm);
         return new Result(true,StatusCode.OK,"修改成功");
@@ -95,7 +95,7 @@ public class RolePermController {
      * @param rolePerm
      * @return
      */
-    @PostMapping("/add")
+    @PostMapping
     public Result add(@RequestBody RolePerm rolePerm){
         //调用RolePermService实现添加RolePerm
         rolePermService.add(rolePerm);

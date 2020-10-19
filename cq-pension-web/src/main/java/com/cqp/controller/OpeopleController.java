@@ -2,12 +2,15 @@ package com.cqp.controller;
 
 import com.cqp.model.Opeople;
 import com.cqp.service.api.OpeopleService;
+import com.cqp.utils.PhotoUtils;
 import com.github.pagehelper.PageInfo;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 /****
@@ -79,10 +82,27 @@ public class OpeopleController {
      * 修改Opeople数据
      * @param opeople
      * @param id
+     * @param file
      * @return
      */
     @PutMapping(value="/{id}")
-    public Result update(@RequestBody Opeople opeople, @PathVariable Integer id){
+    public Result update(@RequestBody Opeople opeople, @PathVariable Integer id, @RequestParam("photo") MultipartFile file){
+        String path;
+        //保存文件
+        if(!file.isEmpty()){
+            //图片保存
+            try {
+                path = PhotoUtils.addPhoto(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                //文件保存失败
+                opeople.setOpPhoto("");
+                opeopleService.update(opeople);
+                return new Result(true,StatusCode.ERROR,"，图片保存失败！对象除图片外的属性修改成功");
+            }
+        }else{
+            path = "";
+        }
         //设置主键值
         opeople.setOpId(id);
         //调用OpeopleService实现修改Opeople
@@ -93,12 +113,31 @@ public class OpeopleController {
     /***
      * 新增Opeople数据
      * @param opeople
+     * @param file
      * @return
      */
     @PostMapping("/add")
-    public Result add(@RequestBody Opeople opeople){
+    public Result add(@RequestBody Opeople opeople, @RequestParam("photo") MultipartFile file){
         //调用OpeopleService实现添加Opeople
+        String path;
+        //保存文件
+        if(!file.isEmpty()){
+            //图片保存
+            try {
+                path = PhotoUtils.addPhoto(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                //文件保存失败
+                opeople.setOpPhoto("");
+                opeopleService.add(opeople);
+                return new Result(true,StatusCode.ERROR,"对象添加成功，但图片保存失败！");
+            }
+        }else{
+            path = "";
+        }
+        opeople.setOpPhoto(path);
         opeopleService.add(opeople);
+        //保存成功
         return new Result(true,StatusCode.OK,"添加成功");
     }
 
