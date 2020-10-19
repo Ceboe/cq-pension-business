@@ -107,8 +107,8 @@ public class RoleServiceImpl implements RoleService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        roleMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return roleMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -116,8 +116,8 @@ public class RoleServiceImpl implements RoleService {
      * @param role
      */
     @Override
-    public void update(Role role){
-        roleMapper.updateByPrimaryKey(role);
+    public int update(Role role){
+        return roleMapper.updateByPrimaryKey(role);
     }
 
     /**
@@ -125,8 +125,8 @@ public class RoleServiceImpl implements RoleService {
      * @param role
      */
     @Override
-    public void add(Role role){
-        roleMapper.insert(role);
+    public int add(Role role){
+        return roleMapper.insert(role);
     }
 
     /**

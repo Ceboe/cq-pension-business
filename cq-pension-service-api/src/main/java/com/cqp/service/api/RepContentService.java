@@ -40,19 +40,19 @@ public interface RepContentService {
      * 删除RepContent
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改RepContent数据
      * @param repContent
      */
-    void update(RepContent repContent);
+    int update(RepContent repContent);
 
     /***
      * 新增RepContent
      * @param repContent
      */
-    void add(RepContent repContent);
+    int add(RepContent repContent);
 
     /**
      * 根据ID查询RepContent

@@ -127,8 +127,8 @@ public class FamilyServiceImpl implements FamilyService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        familyMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return familyMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -145,8 +145,8 @@ public class FamilyServiceImpl implements FamilyService {
      * @param family
      */
     @Override
-    public void add(Family family){
-        familyMapper.insert(family);
+    public int add(Family family){
+        return familyMapper.insert(family);
     }
 
     /**

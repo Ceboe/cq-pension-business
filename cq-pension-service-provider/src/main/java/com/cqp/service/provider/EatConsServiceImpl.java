@@ -115,8 +115,8 @@ public class EatConsServiceImpl implements EatConsService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        eatConsMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return eatConsMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class EatConsServiceImpl implements EatConsService {
      * @param eatCons
      */
     @Override
-    public void update(EatCons eatCons){
-        eatConsMapper.updateByPrimaryKey(eatCons);
+    public int update(EatCons eatCons){
+        return eatConsMapper.updateByPrimaryKey(eatCons);
     }
 
     /**
@@ -133,8 +133,8 @@ public class EatConsServiceImpl implements EatConsService {
      * @param eatCons
      */
     @Override
-    public void add(EatCons eatCons){
-        eatConsMapper.insert(eatCons);
+    public int add(EatCons eatCons){
+        return eatConsMapper.insert(eatCons);
     }
 
     /**

@@ -103,8 +103,8 @@ public class EatLevelServiceImpl implements EatLevelService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        eatLevelMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return eatLevelMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -112,8 +112,8 @@ public class EatLevelServiceImpl implements EatLevelService {
      * @param eatLevel
      */
     @Override
-    public void update(EatLevel eatLevel){
-        eatLevelMapper.updateByPrimaryKey(eatLevel);
+    public int update(EatLevel eatLevel){
+        return eatLevelMapper.updateByPrimaryKey(eatLevel);
     }
 
     /**
@@ -121,8 +121,8 @@ public class EatLevelServiceImpl implements EatLevelService {
      * @param eatLevel
      */
     @Override
-    public void add(EatLevel eatLevel){
-        eatLevelMapper.insert(eatLevel);
+    public int add(EatLevel eatLevel){
+        return eatLevelMapper.insert(eatLevel);
     }
 
     /**

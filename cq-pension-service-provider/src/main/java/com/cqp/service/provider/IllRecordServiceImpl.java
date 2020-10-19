@@ -119,8 +119,8 @@ public class IllRecordServiceImpl implements IllRecordService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        illRecordMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return illRecordMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -128,8 +128,8 @@ public class IllRecordServiceImpl implements IllRecordService {
      * @param illRecord
      */
     @Override
-    public void update(IllRecord illRecord){
-        illRecordMapper.updateByPrimaryKey(illRecord);
+    public int update(IllRecord illRecord){
+        return illRecordMapper.updateByPrimaryKey(illRecord);
     }
 
     /**
@@ -137,8 +137,8 @@ public class IllRecordServiceImpl implements IllRecordService {
      * @param illRecord
      */
     @Override
-    public void add(IllRecord illRecord){
-        illRecordMapper.insert(illRecord);
+    public int add(IllRecord illRecord){
+        return illRecordMapper.insert(illRecord);
     }
 
     /**

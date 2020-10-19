@@ -40,19 +40,19 @@ public interface HealAssService {
      * 删除HealAss
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改HealAss数据
      * @param healAss
      */
-    void update(HealAss healAss);
+    int update(HealAss healAss);
 
     /***
      * 新增HealAss
      * @param healAss
      */
-    void add(HealAss healAss);
+    int add(HealAss healAss);
 
     /**
      * 根据ID查询HealAss

@@ -107,8 +107,8 @@ public class PermissionsServiceImpl implements PermissionsService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        permissionsMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return permissionsMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -116,8 +116,8 @@ public class PermissionsServiceImpl implements PermissionsService {
      * @param permissions
      */
     @Override
-    public void update(Permissions permissions){
-        permissionsMapper.updateByPrimaryKey(permissions);
+    public int update(Permissions permissions){
+        return permissionsMapper.updateByPrimaryKey(permissions);
     }
 
     /**
@@ -125,8 +125,8 @@ public class PermissionsServiceImpl implements PermissionsService {
      * @param permissions
      */
     @Override
-    public void add(Permissions permissions){
-        permissionsMapper.insert(permissions);
+    public int add(Permissions permissions){
+        return permissionsMapper.insert(permissions);
     }
 
     /**

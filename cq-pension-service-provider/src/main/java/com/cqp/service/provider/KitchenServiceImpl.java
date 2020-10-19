@@ -119,8 +119,8 @@ public class KitchenServiceImpl implements KitchenService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        kitchenMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return kitchenMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -128,8 +128,8 @@ public class KitchenServiceImpl implements KitchenService {
      * @param kitchen
      */
     @Override
-    public void update(Kitchen kitchen){
-        kitchenMapper.updateByPrimaryKey(kitchen);
+    public int update(Kitchen kitchen){
+        return kitchenMapper.updateByPrimaryKey(kitchen);
     }
 
     /**
@@ -137,8 +137,8 @@ public class KitchenServiceImpl implements KitchenService {
      * @param kitchen
      */
     @Override
-    public void add(Kitchen kitchen){
-        kitchenMapper.insert(kitchen);
+    public int add(Kitchen kitchen){
+        return kitchenMapper.insert(kitchen);
     }
 
     /**

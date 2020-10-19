@@ -123,8 +123,8 @@ public class UseRecordServiceImpl implements UseRecordService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        useRecordMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return useRecordMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class UseRecordServiceImpl implements UseRecordService {
      * @param useRecord
      */
     @Override
-    public void update(UseRecord useRecord){
-        useRecordMapper.updateByPrimaryKey(useRecord);
+    public int update(UseRecord useRecord){
+        return useRecordMapper.updateByPrimaryKey(useRecord);
     }
 
     /**
@@ -141,8 +141,8 @@ public class UseRecordServiceImpl implements UseRecordService {
      * @param useRecord
      */
     @Override
-    public void add(UseRecord useRecord){
-        useRecordMapper.insert(useRecord);
+    public int add(UseRecord useRecord){
+        return useRecordMapper.insert(useRecord);
     }
 
     /**

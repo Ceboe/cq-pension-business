@@ -40,19 +40,19 @@ public interface PermMenuService {
      * 删除PermMenu
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改PermMenu数据
      * @param permMenu
      */
-    void update(PermMenu permMenu);
+    int update(PermMenu permMenu);
 
     /***
      * 新增PermMenu
      * @param permMenu
      */
-    void add(PermMenu permMenu);
+    int add(PermMenu permMenu);
 
     /**
      * 根据ID查询PermMenu

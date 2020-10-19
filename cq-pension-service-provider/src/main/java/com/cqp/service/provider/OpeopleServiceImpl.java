@@ -127,8 +127,8 @@ public class OpeopleServiceImpl implements OpeopleService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        opeopleMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return opeopleMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -136,8 +136,8 @@ public class OpeopleServiceImpl implements OpeopleService {
      * @param opeople
      */
     @Override
-    public void update(Opeople opeople){
-        opeopleMapper.updateByPrimaryKey(opeople);
+    public int update(Opeople opeople){
+        return opeopleMapper.updateByPrimaryKey(opeople);
     }
 
     /**
@@ -145,8 +145,8 @@ public class OpeopleServiceImpl implements OpeopleService {
      * @param opeople
      */
     @Override
-    public void add(Opeople opeople){
-        opeopleMapper.insert(opeople);
+    public int add(Opeople opeople){
+        return opeopleMapper.insert(opeople);
     }
 
     /**

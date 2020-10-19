@@ -40,19 +40,19 @@ public interface KitchenService {
      * 删除Kitchen
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Kitchen数据
      * @param kitchen
      */
-    void update(Kitchen kitchen);
+    int update(Kitchen kitchen);
 
     /***
      * 新增Kitchen
      * @param kitchen
      */
-    void add(Kitchen kitchen);
+    int add(Kitchen kitchen);
 
     /**
      * 根据ID查询Kitchen

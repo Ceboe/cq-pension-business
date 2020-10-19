@@ -40,19 +40,19 @@ public interface OpeopleService {
      * 删除Opeople
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Opeople数据
      * @param opeople
      */
-    void update(Opeople opeople);
+    int update(Opeople opeople);
 
     /***
      * 新增Opeople
      * @param opeople
      */
-    void add(Opeople opeople);
+    int add(Opeople opeople);
 
     /**
      * 根据ID查询Opeople

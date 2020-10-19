@@ -107,8 +107,8 @@ public class FloorServiceImpl implements FloorService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        floorMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return floorMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -116,8 +116,8 @@ public class FloorServiceImpl implements FloorService {
      * @param floor
      */
     @Override
-    public void update(Floor floor){
-        floorMapper.updateByPrimaryKey(floor);
+    public int update(Floor floor){
+        return floorMapper.updateByPrimaryKey(floor);
     }
 
     /**
@@ -125,8 +125,8 @@ public class FloorServiceImpl implements FloorService {
      * @param floor
      */
     @Override
-    public void add(Floor floor){
-        floorMapper.insert(floor);
+    public int add(Floor floor){
+        return floorMapper.insert(floor);
     }
 
     /**

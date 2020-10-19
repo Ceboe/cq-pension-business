@@ -40,19 +40,19 @@ public interface MenuService {
      * 删除Menu
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Menu数据
      * @param menu
      */
-    void update(Menu menu);
+    int update(Menu menu);
 
     /***
      * 新增Menu
      * @param menu
      */
-    void add(Menu menu);
+    int add(Menu menu);
 
     /**
      * 根据ID查询Menu

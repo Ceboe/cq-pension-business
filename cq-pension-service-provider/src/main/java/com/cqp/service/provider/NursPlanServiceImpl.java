@@ -115,8 +115,8 @@ public class NursPlanServiceImpl implements NursPlanService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        nursPlanMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return nursPlanMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class NursPlanServiceImpl implements NursPlanService {
      * @param nursPlan
      */
     @Override
-    public void update(NursPlan nursPlan){
-        nursPlanMapper.updateByPrimaryKey(nursPlan);
+    public int update(NursPlan nursPlan){
+        return nursPlanMapper.updateByPrimaryKey(nursPlan);
     }
 
     /**
@@ -133,8 +133,8 @@ public class NursPlanServiceImpl implements NursPlanService {
      * @param nursPlan
      */
     @Override
-    public void add(NursPlan nursPlan){
-        nursPlanMapper.insert(nursPlan);
+    public int add(NursPlan nursPlan){
+        return nursPlanMapper.insert(nursPlan);
     }
 
     /**

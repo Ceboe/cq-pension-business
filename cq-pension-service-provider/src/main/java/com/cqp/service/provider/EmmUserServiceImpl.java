@@ -111,8 +111,8 @@ public class EmmUserServiceImpl implements EmmUserService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        emmUserMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return emmUserMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class EmmUserServiceImpl implements EmmUserService {
      * @param emmUser
      */
     @Override
-    public void update(EmmUser emmUser){
-        emmUserMapper.updateByPrimaryKey(emmUser);
+    public int update(EmmUser emmUser){
+        return emmUserMapper.updateByPrimaryKey(emmUser);
     }
 
     /**

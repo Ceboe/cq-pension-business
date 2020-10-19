@@ -40,19 +40,19 @@ public interface EatConsService {
      * 删除EatCons
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改EatCons数据
      * @param eatCons
      */
-    void update(EatCons eatCons);
+    int update(EatCons eatCons);
 
     /***
      * 新增EatCons
      * @param eatCons
      */
-    void add(EatCons eatCons);
+    int add(EatCons eatCons);
 
     /**
      * 根据ID查询EatCons

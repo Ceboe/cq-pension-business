@@ -40,19 +40,19 @@ public interface MaterialService {
      * 删除Material
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Material数据
      * @param material
      */
-    void update(Material material);
+    int update(Material material);
 
     /***
      * 新增Material
      * @param material
      */
-    void add(Material material);
+    int add(Material material);
 
     /**
      * 根据ID查询Material

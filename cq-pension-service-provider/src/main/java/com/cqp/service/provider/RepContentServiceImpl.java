@@ -107,8 +107,8 @@ public class RepContentServiceImpl implements RepContentService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        repContentMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return repContentMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -116,8 +116,8 @@ public class RepContentServiceImpl implements RepContentService {
      * @param repContent
      */
     @Override
-    public void update(RepContent repContent){
-        repContentMapper.updateByPrimaryKey(repContent);
+    public int update(RepContent repContent){
+        return repContentMapper.updateByPrimaryKey(repContent);
     }
 
     /**
@@ -125,8 +125,8 @@ public class RepContentServiceImpl implements RepContentService {
      * @param repContent
      */
     @Override
-    public void add(RepContent repContent){
-        repContentMapper.insert(repContent);
+    public int add(RepContent repContent){
+        return repContentMapper.insert(repContent);
     }
 
     /**

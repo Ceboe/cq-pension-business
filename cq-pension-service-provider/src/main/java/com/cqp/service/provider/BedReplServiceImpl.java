@@ -111,8 +111,8 @@ public class BedReplServiceImpl implements BedReplService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        bedReplMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return bedReplMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class BedReplServiceImpl implements BedReplService {
      * @param bedRepl
      */
     @Override
-    public void update(BedRepl bedRepl){
-        bedReplMapper.updateByPrimaryKey(bedRepl);
+    public int update(BedRepl bedRepl){
+        return bedReplMapper.updateByPrimaryKey(bedRepl);
     }
 
     /**
@@ -129,8 +129,8 @@ public class BedReplServiceImpl implements BedReplService {
      * @param bedRepl
      */
     @Override
-    public void add(BedRepl bedRepl){
-        bedReplMapper.insert(bedRepl);
+    public int add(BedRepl bedRepl){
+        return bedReplMapper.insert(bedRepl);
     }
 
     /**

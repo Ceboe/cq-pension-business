@@ -40,19 +40,19 @@ public interface RolePermService {
      * 删除RolePerm
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改RolePerm数据
      * @param rolePerm
      */
-    void update(RolePerm rolePerm);
+    int update(RolePerm rolePerm);
 
     /***
      * 新增RolePerm
      * @param rolePerm
      */
-    void add(RolePerm rolePerm);
+    int add(RolePerm rolePerm);
 
     /**
      * 根据ID查询RolePerm

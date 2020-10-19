@@ -40,19 +40,19 @@ public interface PhyExamService {
      * 删除PhyExam
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改PhyExam数据
      * @param phyExam
      */
-    void update(PhyExam phyExam);
+    int update(PhyExam phyExam);
 
     /***
      * 新增PhyExam
      * @param phyExam
      */
-    void add(PhyExam phyExam);
+    int add(PhyExam phyExam);
 
     /**
      * 根据ID查询PhyExam

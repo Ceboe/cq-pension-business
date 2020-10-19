@@ -115,8 +115,8 @@ public class EmployeemanageServiceImpl implements EmployeemanageService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        employeemanageMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return employeemanageMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class EmployeemanageServiceImpl implements EmployeemanageService {
      * @param employeemanage
      */
     @Override
-    public void update(Employeemanage employeemanage){
-        employeemanageMapper.updateByPrimaryKey(employeemanage);
+    public int update(Employeemanage employeemanage){
+        return employeemanageMapper.updateByPrimaryKey(employeemanage);
     }
 
     /**
@@ -133,8 +133,8 @@ public class EmployeemanageServiceImpl implements EmployeemanageService {
      * @param employeemanage
      */
     @Override
-    public void add(Employeemanage employeemanage){
-        employeemanageMapper.insert(employeemanage);
+    public int add(Employeemanage employeemanage){
+        return employeemanageMapper.insert(employeemanage);
     }
 
     /**

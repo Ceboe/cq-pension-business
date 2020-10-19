@@ -40,19 +40,19 @@ public interface IllHistoryService {
      * 删除IllHistory
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改IllHistory数据
      * @param illHistory
      */
-    void update(IllHistory illHistory);
+    int update(IllHistory illHistory);
 
     /***
      * 新增IllHistory
      * @param illHistory
      */
-    void add(IllHistory illHistory);
+    int add(IllHistory illHistory);
 
     /**
      * 根据ID查询IllHistory

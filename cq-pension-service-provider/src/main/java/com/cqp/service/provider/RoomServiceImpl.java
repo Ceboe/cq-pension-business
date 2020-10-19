@@ -111,8 +111,8 @@ public class RoomServiceImpl implements RoomService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        roomMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return roomMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class RoomServiceImpl implements RoomService {
      * @param room
      */
     @Override
-    public void update(Room room){
-        roomMapper.updateByPrimaryKey(room);
+    public int update(Room room){
+        return roomMapper.updateByPrimaryKey(room);
     }
 
     /**
@@ -129,8 +129,8 @@ public class RoomServiceImpl implements RoomService {
      * @param room
      */
     @Override
-    public void add(Room room){
-        roomMapper.insert(room);
+    public int add(Room room){
+        return roomMapper.insert(room);
     }
 
     /**

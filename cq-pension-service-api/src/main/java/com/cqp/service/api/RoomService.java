@@ -40,19 +40,19 @@ public interface RoomService {
      * 删除Room
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Room数据
      * @param room
      */
-    void update(Room room);
+    int update(Room room);
 
     /***
      * 新增Room
      * @param room
      */
-    void add(Room room);
+    int add(Room room);
 
     /**
      * 根据ID查询Room

@@ -40,19 +40,19 @@ public interface BedReplService {
      * 删除BedRepl
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改BedRepl数据
      * @param bedRepl
      */
-    void update(BedRepl bedRepl);
+    int update(BedRepl bedRepl);
 
     /***
      * 新增BedRepl
      * @param bedRepl
      */
-    void add(BedRepl bedRepl);
+    int add(BedRepl bedRepl);
 
     /**
      * 根据ID查询BedRepl

@@ -119,8 +119,8 @@ public class VisitRecordServiceImpl implements VisitRecordService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        visitRecordMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return visitRecordMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -128,8 +128,8 @@ public class VisitRecordServiceImpl implements VisitRecordService {
      * @param visitRecord
      */
     @Override
-    public void update(VisitRecord visitRecord){
-        visitRecordMapper.updateByPrimaryKey(visitRecord);
+    public int update(VisitRecord visitRecord){
+        return visitRecordMapper.updateByPrimaryKey(visitRecord);
     }
 
     /**
@@ -137,8 +137,8 @@ public class VisitRecordServiceImpl implements VisitRecordService {
      * @param visitRecord
      */
     @Override
-    public void add(VisitRecord visitRecord){
-        visitRecordMapper.insert(visitRecord);
+    public int add(VisitRecord visitRecord){
+        return visitRecordMapper.insert(visitRecord);
     }
 
     /**

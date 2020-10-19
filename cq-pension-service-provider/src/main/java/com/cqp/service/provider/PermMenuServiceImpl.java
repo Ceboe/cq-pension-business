@@ -95,8 +95,8 @@ public class PermMenuServiceImpl implements PermMenuService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        permMenuMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return permMenuMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -104,8 +104,8 @@ public class PermMenuServiceImpl implements PermMenuService {
      * @param permMenu
      */
     @Override
-    public void update(PermMenu permMenu){
-        permMenuMapper.updateByPrimaryKey(permMenu);
+    public int update(PermMenu permMenu){
+        return permMenuMapper.updateByPrimaryKey(permMenu);
     }
 
     /**
@@ -113,8 +113,8 @@ public class PermMenuServiceImpl implements PermMenuService {
      * @param permMenu
      */
     @Override
-    public void add(PermMenu permMenu){
-        permMenuMapper.insert(permMenu);
+    public int add(PermMenu permMenu){
+        return permMenuMapper.insert(permMenu);
     }
 
     /**

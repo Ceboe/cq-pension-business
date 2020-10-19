@@ -40,19 +40,19 @@ public interface NursPlanService {
      * 删除NursPlan
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改NursPlan数据
      * @param nursPlan
      */
-    void update(NursPlan nursPlan);
+    int update(NursPlan nursPlan);
 
     /***
      * 新增NursPlan
      * @param nursPlan
      */
-    void add(NursPlan nursPlan);
+    int add(NursPlan nursPlan);
 
     /**
      * 根据ID查询NursPlan

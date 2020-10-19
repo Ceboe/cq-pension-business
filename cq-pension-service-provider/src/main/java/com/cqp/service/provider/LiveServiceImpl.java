@@ -123,8 +123,8 @@ public class LiveServiceImpl implements LiveService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        liveMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return liveMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class LiveServiceImpl implements LiveService {
      * @param live
      */
     @Override
-    public void update(Live live){
-        liveMapper.updateByPrimaryKey(live);
+    public int update(Live live){
+        return liveMapper.updateByPrimaryKey(live);
     }
 
     /**
@@ -141,8 +141,8 @@ public class LiveServiceImpl implements LiveService {
      * @param live
      */
     @Override
-    public void add(Live live){
-        liveMapper.insert(live);
+    public int add(Live live){
+        return liveMapper.insert(live);
     }
 
     /**

@@ -40,19 +40,19 @@ public interface VisitRecordService {
      * 删除VisitRecord
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改VisitRecord数据
      * @param visitRecord
      */
-    void update(VisitRecord visitRecord);
+    int update(VisitRecord visitRecord);
 
     /***
      * 新增VisitRecord
      * @param visitRecord
      */
-    void add(VisitRecord visitRecord);
+    int add(VisitRecord visitRecord);
 
     /**
      * 根据ID查询VisitRecord

@@ -111,8 +111,8 @@ public class LogServiceImpl implements LogService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        logMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return logMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class LogServiceImpl implements LogService {
      * @param log
      */
     @Override
-    public void update(Log log){
-        logMapper.updateByPrimaryKey(log);
+    public int update(Log log){
+        return logMapper.updateByPrimaryKey(log);
     }
 
     /**
@@ -129,8 +129,8 @@ public class LogServiceImpl implements LogService {
      * @param log
      */
     @Override
-    public void add(Log log){
-        logMapper.insert(log);
+    public int add(Log log){
+        return logMapper.insert(log);
     }
 
     /**

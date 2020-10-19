@@ -111,8 +111,8 @@ public class PriceEatServiceImpl implements PriceEatService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        priceEatMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return priceEatMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class PriceEatServiceImpl implements PriceEatService {
      * @param priceEat
      */
     @Override
-    public void update(PriceEat priceEat){
-        priceEatMapper.updateByPrimaryKey(priceEat);
+    public int update(PriceEat priceEat){
+        return priceEatMapper.updateByPrimaryKey(priceEat);
     }
 
     /**
@@ -129,8 +129,8 @@ public class PriceEatServiceImpl implements PriceEatService {
      * @param priceEat
      */
     @Override
-    public void add(PriceEat priceEat){
-        priceEatMapper.insert(priceEat);
+    public int add(PriceEat priceEat){
+        return priceEatMapper.insert(priceEat);
     }
 
     /**

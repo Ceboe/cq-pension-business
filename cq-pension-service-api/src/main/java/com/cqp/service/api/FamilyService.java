@@ -40,7 +40,7 @@ public interface FamilyService {
      * 删除Family
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Family数据
@@ -52,7 +52,7 @@ public interface FamilyService {
      * 新增Family
      * @param family
      */
-    void add(Family family);
+    int add(Family family);
 
     /**
      * 根据ID查询Family

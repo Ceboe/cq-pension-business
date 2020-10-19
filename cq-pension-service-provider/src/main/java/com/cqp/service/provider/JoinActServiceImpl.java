@@ -103,8 +103,8 @@ public class JoinActServiceImpl implements JoinActService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        joinActMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return joinActMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -112,8 +112,8 @@ public class JoinActServiceImpl implements JoinActService {
      * @param joinAct
      */
     @Override
-    public void update(JoinAct joinAct){
-        joinActMapper.updateByPrimaryKey(joinAct);
+    public int update(JoinAct joinAct){
+        return joinActMapper.updateByPrimaryKey(joinAct);
     }
 
     /**
@@ -121,8 +121,8 @@ public class JoinActServiceImpl implements JoinActService {
      * @param joinAct
      */
     @Override
-    public void add(JoinAct joinAct){
-        joinActMapper.insert(joinAct);
+    public int add(JoinAct joinAct){
+        return joinActMapper.insert(joinAct);
     }
 
     /**

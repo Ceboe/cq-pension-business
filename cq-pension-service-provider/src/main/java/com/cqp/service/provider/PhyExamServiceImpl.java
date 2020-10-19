@@ -123,8 +123,8 @@ public class PhyExamServiceImpl implements PhyExamService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        phyExamMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return phyExamMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class PhyExamServiceImpl implements PhyExamService {
      * @param phyExam
      */
     @Override
-    public void update(PhyExam phyExam){
-        phyExamMapper.updateByPrimaryKey(phyExam);
+    public int update(PhyExam phyExam){
+        return phyExamMapper.updateByPrimaryKey(phyExam);
     }
 
     /**
@@ -141,8 +141,8 @@ public class PhyExamServiceImpl implements PhyExamService {
      * @param phyExam
      */
     @Override
-    public void add(PhyExam phyExam){
-        phyExamMapper.insert(phyExam);
+    public int add(PhyExam phyExam){
+        return phyExamMapper.insert(phyExam);
     }
 
     /**

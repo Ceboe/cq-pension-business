@@ -40,19 +40,19 @@ public interface ReportService {
      * 删除Report
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Report数据
      * @param report
      */
-    void update(Report report);
+    int update(Report report);
 
     /***
      * 新增Report
      * @param report
      */
-    void add(Report report);
+    int add(Report report);
 
     /**
      * 根据ID查询Report

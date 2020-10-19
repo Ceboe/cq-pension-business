@@ -107,8 +107,8 @@ public class PersonEatServiceImpl implements PersonEatService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        personEatMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return personEatMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -116,8 +116,8 @@ public class PersonEatServiceImpl implements PersonEatService {
      * @param personEat
      */
     @Override
-    public void update(PersonEat personEat){
-        personEatMapper.updateByPrimaryKey(personEat);
+    public int update(PersonEat personEat){
+        return personEatMapper.updateByPrimaryKey(personEat);
     }
 
     /**
@@ -125,8 +125,8 @@ public class PersonEatServiceImpl implements PersonEatService {
      * @param personEat
      */
     @Override
-    public void add(PersonEat personEat){
-        personEatMapper.insert(personEat);
+    public int add(PersonEat personEat){
+        return personEatMapper.insert(personEat);
     }
 
     /**

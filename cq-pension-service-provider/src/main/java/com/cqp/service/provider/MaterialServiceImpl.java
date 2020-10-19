@@ -127,8 +127,8 @@ public class MaterialServiceImpl implements MaterialService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        materialMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return materialMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -136,8 +136,8 @@ public class MaterialServiceImpl implements MaterialService {
      * @param material
      */
     @Override
-    public void update(Material material){
-        materialMapper.updateByPrimaryKey(material);
+    public int update(Material material){
+        return materialMapper.updateByPrimaryKey(material);
     }
 
     /**
@@ -145,8 +145,8 @@ public class MaterialServiceImpl implements MaterialService {
      * @param material
      */
     @Override
-    public void add(Material material){
-        materialMapper.insert(material);
+    public int add(Material material){
+        return materialMapper.insert(material);
     }
 
     /**

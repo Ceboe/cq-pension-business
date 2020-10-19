@@ -40,19 +40,19 @@ public interface FloorService {
      * 删除Floor
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Floor数据
      * @param floor
      */
-    void update(Floor floor);
+    int update(Floor floor);
 
     /***
      * 新增Floor
      * @param floor
      */
-    void add(Floor floor);
+    int add(Floor floor);
 
     /**
      * 根据ID查询Floor

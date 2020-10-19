@@ -99,8 +99,8 @@ public class RolePermServiceImpl implements RolePermService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        rolePermMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return rolePermMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -108,8 +108,8 @@ public class RolePermServiceImpl implements RolePermService {
      * @param rolePerm
      */
     @Override
-    public void update(RolePerm rolePerm){
-        rolePermMapper.updateByPrimaryKey(rolePerm);
+    public int update(RolePerm rolePerm){
+        return rolePermMapper.updateByPrimaryKey(rolePerm);
     }
 
     /**
@@ -117,8 +117,8 @@ public class RolePermServiceImpl implements RolePermService {
      * @param rolePerm
      */
     @Override
-    public void add(RolePerm rolePerm){
-        rolePermMapper.insert(rolePerm);
+    public int add(RolePerm rolePerm){
+        return rolePermMapper.insert(rolePerm);
     }
 
     /**

@@ -40,19 +40,19 @@ public interface SocialWorkerActService {
      * 删除SocialWorkerAct
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改SocialWorkerAct数据
      * @param socialWorkerAct
      */
-    void update(SocialWorkerAct socialWorkerAct);
+    int update(SocialWorkerAct socialWorkerAct);
 
     /***
      * 新增SocialWorkerAct
      * @param socialWorkerAct
      */
-    void add(SocialWorkerAct socialWorkerAct);
+    int add(SocialWorkerAct socialWorkerAct);
 
     /**
      * 根据ID查询SocialWorkerAct

@@ -40,19 +40,19 @@ public interface EatLevelService {
      * 删除EatLevel
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改EatLevel数据
      * @param eatLevel
      */
-    void update(EatLevel eatLevel);
+    int update(EatLevel eatLevel);
 
     /***
      * 新增EatLevel
      * @param eatLevel
      */
-    void add(EatLevel eatLevel);
+    int add(EatLevel eatLevel);
 
     /**
      * 根据ID查询EatLevel

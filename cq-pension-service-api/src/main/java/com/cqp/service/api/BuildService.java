@@ -40,19 +40,19 @@ public interface BuildService {
      * 删除Build
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Build数据
      * @param build
      */
-    void update(Build build);
+    int update(Build build);
 
     /***
      * 新增Build
      * @param build
      */
-    void add(Build build);
+    int add(Build build);
 
     /**
      * 根据ID查询Build

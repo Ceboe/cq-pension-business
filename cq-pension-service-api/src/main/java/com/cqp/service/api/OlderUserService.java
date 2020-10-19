@@ -40,19 +40,19 @@ public interface OlderUserService {
      * 删除OlderUser
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改OlderUser数据
      * @param olderUser
      */
-    void update(OlderUser olderUser);
+    int update(OlderUser olderUser);
 
     /***
      * 新增OlderUser
      * @param olderUser
      */
-    void add(OlderUser olderUser);
+    int add(OlderUser olderUser);
 
     /**
      * 根据ID查询OlderUser

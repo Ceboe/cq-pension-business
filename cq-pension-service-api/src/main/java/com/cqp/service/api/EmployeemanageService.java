@@ -40,19 +40,19 @@ public interface EmployeemanageService {
      * 删除Employeemanage
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Employeemanage数据
      * @param employeemanage
      */
-    void update(Employeemanage employeemanage);
+    int update(Employeemanage employeemanage);
 
     /***
      * 新增Employeemanage
      * @param employeemanage
      */
-    void add(Employeemanage employeemanage);
+    int add(Employeemanage employeemanage);
 
     /**
      * 根据ID查询Employeemanage

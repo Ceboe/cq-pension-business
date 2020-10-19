@@ -40,19 +40,19 @@ public interface RoleService {
      * 删除Role
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Role数据
      * @param role
      */
-    void update(Role role);
+    int update(Role role);
 
     /***
      * 新增Role
      * @param role
      */
-    void add(Role role);
+    int add(Role role);
 
     /**
      * 根据ID查询Role

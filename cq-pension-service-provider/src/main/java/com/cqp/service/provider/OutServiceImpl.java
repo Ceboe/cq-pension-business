@@ -123,8 +123,8 @@ public class OutServiceImpl implements OutService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        outMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return outMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class OutServiceImpl implements OutService {
      * @param out
      */
     @Override
-    public void update(Out out){
-        outMapper.updateByPrimaryKey(out);
+    public int update(Out out){
+        return outMapper.updateByPrimaryKey(out);
     }
 
     /**
@@ -141,8 +141,8 @@ public class OutServiceImpl implements OutService {
      * @param out
      */
     @Override
-    public void add(Out out){
-        outMapper.insert(out);
+    public int add(Out out){
+        return outMapper.insert(out);
     }
 
     /**

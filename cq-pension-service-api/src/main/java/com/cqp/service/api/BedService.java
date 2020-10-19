@@ -40,19 +40,19 @@ public interface BedService {
      * 删除Bed
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Bed数据
      * @param bed
      */
-    void update(Bed bed);
+    int update(Bed bed);
 
     /***
      * 新增Bed
      * @param bed
      */
-    void add(Bed bed);
+    int add(Bed bed);
 
     /**
      * 根据ID查询Bed

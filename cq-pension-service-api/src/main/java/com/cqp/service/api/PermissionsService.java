@@ -40,19 +40,19 @@ public interface PermissionsService {
      * 删除Permissions
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Permissions数据
      * @param permissions
      */
-    void update(Permissions permissions);
+    int update(Permissions permissions);
 
     /***
      * 新增Permissions
      * @param permissions
      */
-    void add(Permissions permissions);
+    int add(Permissions permissions);
 
     /**
      * 根据ID查询Permissions

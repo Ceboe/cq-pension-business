@@ -123,8 +123,8 @@ public class SocialWorkerActServiceImpl implements SocialWorkerActService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        socialWorkerActMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return socialWorkerActMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class SocialWorkerActServiceImpl implements SocialWorkerActService {
      * @param socialWorkerAct
      */
     @Override
-    public void update(SocialWorkerAct socialWorkerAct){
-        socialWorkerActMapper.updateByPrimaryKey(socialWorkerAct);
+    public int update(SocialWorkerAct socialWorkerAct){
+        return socialWorkerActMapper.updateByPrimaryKey(socialWorkerAct);
     }
 
     /**
@@ -141,8 +141,8 @@ public class SocialWorkerActServiceImpl implements SocialWorkerActService {
      * @param socialWorkerAct
      */
     @Override
-    public void add(SocialWorkerAct socialWorkerAct){
-        socialWorkerActMapper.insert(socialWorkerAct);
+    public int add(SocialWorkerAct socialWorkerAct){
+        return socialWorkerActMapper.insert(socialWorkerAct);
     }
 
     /**

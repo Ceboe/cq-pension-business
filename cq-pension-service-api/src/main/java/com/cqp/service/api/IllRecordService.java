@@ -40,19 +40,19 @@ public interface IllRecordService {
      * 删除IllRecord
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改IllRecord数据
      * @param illRecord
      */
-    void update(IllRecord illRecord);
+    int update(IllRecord illRecord);
 
     /***
      * 新增IllRecord
      * @param illRecord
      */
-    void add(IllRecord illRecord);
+    int add(IllRecord illRecord);
 
     /**
      * 根据ID查询IllRecord

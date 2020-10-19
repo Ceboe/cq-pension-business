@@ -159,8 +159,8 @@ public class HealAssServiceImpl implements HealAssService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        healAssMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return healAssMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -168,8 +168,8 @@ public class HealAssServiceImpl implements HealAssService {
      * @param healAss
      */
     @Override
-    public void update(HealAss healAss){
-        healAssMapper.updateByPrimaryKey(healAss);
+    public int update(HealAss healAss){
+        return healAssMapper.updateByPrimaryKey(healAss);
     }
 
     /**
@@ -177,8 +177,8 @@ public class HealAssServiceImpl implements HealAssService {
      * @param healAss
      */
     @Override
-    public void add(HealAss healAss){
-        healAssMapper.insert(healAss);
+    public int add(HealAss healAss){
+        return healAssMapper.insert(healAss);
     }
 
     /**

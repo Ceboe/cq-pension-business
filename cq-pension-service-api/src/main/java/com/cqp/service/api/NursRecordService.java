@@ -40,19 +40,19 @@ public interface NursRecordService {
      * 删除NursRecord
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改NursRecord数据
      * @param nursRecord
      */
-    void update(NursRecord nursRecord);
+    int update(NursRecord nursRecord);
 
     /***
      * 新增NursRecord
      * @param nursRecord
      */
-    void add(NursRecord nursRecord);
+    int add(NursRecord nursRecord);
 
     /**
      * 根据ID查询NursRecord

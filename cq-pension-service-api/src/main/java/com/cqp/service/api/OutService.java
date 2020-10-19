@@ -40,19 +40,19 @@ public interface OutService {
      * 删除Out
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Out数据
      * @param out
      */
-    void update(Out out);
+    int update(Out out);
 
     /***
      * 新增Out
      * @param out
      */
-    void add(Out out);
+    int add(Out out);
 
     /**
      * 根据ID查询Out

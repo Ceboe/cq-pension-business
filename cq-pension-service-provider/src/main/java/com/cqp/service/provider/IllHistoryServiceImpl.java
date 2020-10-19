@@ -115,8 +115,8 @@ public class IllHistoryServiceImpl implements IllHistoryService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        illHistoryMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return illHistoryMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class IllHistoryServiceImpl implements IllHistoryService {
      * @param illHistory
      */
     @Override
-    public void update(IllHistory illHistory){
-        illHistoryMapper.updateByPrimaryKey(illHistory);
+    public int update(IllHistory illHistory){
+        return illHistoryMapper.updateByPrimaryKey(illHistory);
     }
 
     /**
@@ -133,8 +133,8 @@ public class IllHistoryServiceImpl implements IllHistoryService {
      * @param illHistory
      */
     @Override
-    public void add(IllHistory illHistory){
-        illHistoryMapper.insert(illHistory);
+    public int add(IllHistory illHistory){
+        return illHistoryMapper.insert(illHistory);
     }
 
     /**

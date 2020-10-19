@@ -115,8 +115,8 @@ public class BuildServiceImpl implements BuildService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        buildMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return buildMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class BuildServiceImpl implements BuildService {
      * @param build
      */
     @Override
-    public void update(Build build){
-        buildMapper.updateByPrimaryKey(build);
+    public int update(Build build){
+        return buildMapper.updateByPrimaryKey(build);
     }
 
     /**
@@ -133,8 +133,8 @@ public class BuildServiceImpl implements BuildService {
      * @param build
      */
     @Override
-    public void add(Build build){
-        buildMapper.insert(build);
+    public int add(Build build){
+        return buildMapper.insert(build);
     }
 
     /**

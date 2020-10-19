@@ -40,19 +40,19 @@ public interface PriceEatService {
      * 删除PriceEat
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改PriceEat数据
      * @param priceEat
      */
-    void update(PriceEat priceEat);
+    int update(PriceEat priceEat);
 
     /***
      * 新增PriceEat
      * @param priceEat
      */
-    void add(PriceEat priceEat);
+    int add(PriceEat priceEat);
 
     /**
      * 根据ID查询PriceEat

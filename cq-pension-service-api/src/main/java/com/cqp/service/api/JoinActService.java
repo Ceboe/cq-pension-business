@@ -40,19 +40,19 @@ public interface JoinActService {
      * 删除JoinAct
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改JoinAct数据
      * @param joinAct
      */
-    void update(JoinAct joinAct);
+    int update(JoinAct joinAct);
 
     /***
      * 新增JoinAct
      * @param joinAct
      */
-    void add(JoinAct joinAct);
+    int add(JoinAct joinAct);
 
     /**
      * 根据ID查询JoinAct

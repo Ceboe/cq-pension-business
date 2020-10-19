@@ -115,8 +115,8 @@ public class RefundServiceImpl implements RefundService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        refundMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return refundMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -124,8 +124,8 @@ public class RefundServiceImpl implements RefundService {
      * @param refund
      */
     @Override
-    public void update(Refund refund){
-        refundMapper.updateByPrimaryKey(refund);
+    public int update(Refund refund){
+        return refundMapper.updateByPrimaryKey(refund);
     }
 
     /**
@@ -133,8 +133,8 @@ public class RefundServiceImpl implements RefundService {
      * @param refund
      */
     @Override
-    public void add(Refund refund){
-        refundMapper.insert(refund);
+    public int add(Refund refund){
+        return refundMapper.insert(refund);
     }
 
     /**

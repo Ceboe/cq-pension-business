@@ -40,19 +40,19 @@ public interface LiveService {
      * 删除Live
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Live数据
      * @param live
      */
-    void update(Live live);
+    int update(Live live);
 
     /***
      * 新增Live
      * @param live
      */
-    void add(Live live);
+    int add(Live live);
 
     /**
      * 根据ID查询Live

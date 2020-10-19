@@ -111,8 +111,8 @@ public class MenuServiceImpl implements MenuService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        menuMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return menuMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -120,8 +120,8 @@ public class MenuServiceImpl implements MenuService {
      * @param menu
      */
     @Override
-    public void update(Menu menu){
-        menuMapper.updateByPrimaryKey(menu);
+    public int update(Menu menu){
+        return menuMapper.updateByPrimaryKey(menu);
     }
 
     /**
@@ -129,8 +129,8 @@ public class MenuServiceImpl implements MenuService {
      * @param menu
      */
     @Override
-    public void add(Menu menu){
-        menuMapper.insert(menu);
+    public int add(Menu menu){
+        return menuMapper.insert(menu);
     }
 
     /**

@@ -40,19 +40,19 @@ public interface RefundService {
      * 删除Refund
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Refund数据
      * @param refund
      */
-    void update(Refund refund);
+    int update(Refund refund);
 
     /***
      * 新增Refund
      * @param refund
      */
-    void add(Refund refund);
+    int add(Refund refund);
 
     /**
      * 根据ID查询Refund

@@ -103,8 +103,8 @@ public class OlderUserServiceImpl implements OlderUserService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        olderUserMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return olderUserMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -112,8 +112,8 @@ public class OlderUserServiceImpl implements OlderUserService {
      * @param olderUser
      */
     @Override
-    public void update(OlderUser olderUser){
-        olderUserMapper.updateByPrimaryKey(olderUser);
+    public int update(OlderUser olderUser){
+        return olderUserMapper.updateByPrimaryKey(olderUser);
     }
 
     /**
@@ -121,8 +121,8 @@ public class OlderUserServiceImpl implements OlderUserService {
      * @param olderUser
      */
     @Override
-    public void add(OlderUser olderUser){
-        olderUserMapper.insert(olderUser);
+    public int add(OlderUser olderUser){
+        return olderUserMapper.insert(olderUser);
     }
 
     /**

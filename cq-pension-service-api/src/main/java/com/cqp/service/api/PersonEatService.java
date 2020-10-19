@@ -40,19 +40,19 @@ public interface PersonEatService {
      * 删除PersonEat
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改PersonEat数据
      * @param personEat
      */
-    void update(PersonEat personEat);
+    int update(PersonEat personEat);
 
     /***
      * 新增PersonEat
      * @param personEat
      */
-    void add(PersonEat personEat);
+    int add(PersonEat personEat);
 
     /**
      * 根据ID查询PersonEat

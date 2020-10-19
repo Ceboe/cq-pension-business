@@ -40,19 +40,19 @@ public interface UseRecordService {
      * 删除UseRecord
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改UseRecord数据
      * @param useRecord
      */
-    void update(UseRecord useRecord);
+    int update(UseRecord useRecord);
 
     /***
      * 新增UseRecord
      * @param useRecord
      */
-    void add(UseRecord useRecord);
+    int add(UseRecord useRecord);
 
     /**
      * 根据ID查询UseRecord

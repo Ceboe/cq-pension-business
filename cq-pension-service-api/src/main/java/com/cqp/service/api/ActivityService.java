@@ -40,19 +40,19 @@ public interface ActivityService {
      * 删除Activity
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Activity数据
      * @param activity
      */
-    void update(Activity activity);
+    int update(Activity activity);
 
     /***
      * 新增Activity
      * @param activity
      */
-    void add(Activity activity);
+    int add(Activity activity);
 
     /**
      * 根据ID查询Activity

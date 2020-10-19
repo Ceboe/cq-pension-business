@@ -99,8 +99,8 @@ public class ReportServiceImpl implements ReportService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        reportMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return reportMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -108,8 +108,8 @@ public class ReportServiceImpl implements ReportService {
      * @param report
      */
     @Override
-    public void update(Report report){
-        reportMapper.updateByPrimaryKey(report);
+    public int update(Report report){
+        return reportMapper.updateByPrimaryKey(report);
     }
 
     /**
@@ -117,8 +117,8 @@ public class ReportServiceImpl implements ReportService {
      * @param report
      */
     @Override
-    public void add(Report report){
-        reportMapper.insert(report);
+    public int add(Report report){
+        return reportMapper.insert(report);
     }
 
     /**

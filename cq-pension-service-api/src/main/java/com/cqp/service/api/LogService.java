@@ -40,19 +40,19 @@ public interface LogService {
      * 删除Log
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改Log数据
      * @param log
      */
-    void update(Log log);
+    int update(Log log);
 
     /***
      * 新增Log
      * @param log
      */
-    void add(Log log);
+    int add(Log log);
 
     /**
      * 根据ID查询Log

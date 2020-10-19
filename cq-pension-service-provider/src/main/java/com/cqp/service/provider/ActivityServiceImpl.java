@@ -123,8 +123,8 @@ public class ActivityServiceImpl implements ActivityService {
      * @param id
      */
     @Override
-    public void delete(Integer id){
-        activityMapper.deleteByPrimaryKey(id);
+    public int delete(Integer id){
+        return activityMapper.deleteByPrimaryKey(id);
     }
 
     /**
@@ -132,8 +132,8 @@ public class ActivityServiceImpl implements ActivityService {
      * @param activity
      */
     @Override
-    public void update(Activity activity){
-        activityMapper.updateByPrimaryKey(activity);
+    public int update(Activity activity){
+        return activityMapper.updateByPrimaryKey(activity);
     }
 
     /**
@@ -141,8 +141,8 @@ public class ActivityServiceImpl implements ActivityService {
      * @param activity
      */
     @Override
-    public void add(Activity activity){
-        activityMapper.insert(activity);
+    public int add(Activity activity){
+        return activityMapper.insert(activity);
     }
 
     /**

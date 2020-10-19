@@ -40,19 +40,19 @@ public interface NursProjService {
      * 删除NursProj
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改NursProj数据
      * @param nursProj
      */
-    void update(NursProj nursProj);
+    int update(NursProj nursProj);
 
     /***
      * 新增NursProj
      * @param nursProj
      */
-    void add(NursProj nursProj);
+    int add(NursProj nursProj);
 
     /**
      * 根据ID查询NursProj

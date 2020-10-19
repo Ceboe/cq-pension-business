@@ -40,13 +40,13 @@ public interface EmmUserService {
      * 删除EmmUser
      * @param id
      */
-    void delete(Integer id);
+    int delete(Integer id);
 
     /***
      * 修改EmmUser数据
      * @param emmUser
      */
-    void update(EmmUser emmUser);
+    int update(EmmUser emmUser);
 
     /***
      * 新增EmmUser
