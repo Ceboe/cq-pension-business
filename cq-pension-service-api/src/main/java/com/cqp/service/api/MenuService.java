@@ -66,4 +66,10 @@ public interface MenuService {
      * @return
      */
     List<Menu> findAll();
+
+    /***
+     * 根据角色id查询菜单
+     * @return
+     */
+    List<Menu> getMenuForRole(Integer roleId);
 }

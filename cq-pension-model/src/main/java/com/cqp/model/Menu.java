@@ -2,6 +2,7 @@ package com.cqp.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /****
  * @Author:shenkunlin
@@ -30,6 +31,8 @@ public class Menu implements Serializable{
 
     @Column(name = "parent")
 	private Integer parent;//父菜单编号
+
+	private List<Menu> children;//子菜单列表
 
 
 
@@ -86,6 +89,14 @@ public class Menu implements Serializable{
 	//set方法
 	public void setParent(Integer parent) {
 		this.parent = parent;
+	}
+
+	public List<Menu> getChildren() {
+		return children;
+	}
+
+	public void setChildren(List<Menu> children) {
+		this.children = children;
 	}
 
 

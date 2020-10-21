@@ -1,6 +1,7 @@
 package com.cqp.service.provider;
 
 import com.cqp.mapper.RoleMapper;
+import com.cqp.model.Menu;
 import com.cqp.model.Role;
 import com.cqp.service.api.RoleService;
 import com.github.pagehelper.PageHelper;
@@ -146,5 +147,13 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public List<Role> findAll() {
         return roleMapper.selectAll();
+    }
+
+    public List<Menu> getMyMenu() {
+        List<Menu> menuList = null;
+
+
+
+        return menuList;
     }
 }

@@ -51,7 +51,7 @@
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
-                    <include>com.cqp.mapper.xmls/*.xml</include>
+                    <include>com.cqp.mapper/*.xml</include>
                 </includes>
             </resource>
             <resource>

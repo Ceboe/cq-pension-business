@@ -8,6 +8,7 @@ import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /****
@@ -123,5 +124,12 @@ public class MenuController {
         //调用MenuService实现查询所有Menu
         List<Menu> list = menuService.findAll();
         return new Result<List<Menu>>(true, StatusCode.OK,"查询成功",list) ;
+    }
+    @GetMapping ("/getMenuByRole")
+    public Result<List<Menu>> getMenuByRole(HttpSession session){
+        /*EmmUser user = (EmmUser) session.getAttribute("user");
+        Integer roleId = user.getRoleId();*/
+        List<Menu> list = menuService.getMenuForRole(1);
+        return new Result<List<Menu>>(true, StatusCode.OK,"成功",list) ;
     }
 }

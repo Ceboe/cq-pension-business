@@ -40,7 +40,7 @@ public class Opeople implements Serializable{
 	private String opCard;//身份证
 
     @Column(name = "op_phone")
-	private Integer opPhone;//联系电话
+	private Long opPhone;//联系电话
 
     @Column(name = "op_birthday")
 	private Date opBirthday;//出生日期
@@ -120,12 +120,12 @@ public class Opeople implements Serializable{
 		this.opCard = opCard;
 	}
 	//get方法
-	public Integer getOpPhone() {
+	public Long getOpPhone() {
 		return opPhone;
 	}
 
 	//set方法
-	public void setOpPhone(Integer opPhone) {
+	public void setOpPhone(Long opPhone) {
 		this.opPhone = opPhone;
 	}
 	//get方法

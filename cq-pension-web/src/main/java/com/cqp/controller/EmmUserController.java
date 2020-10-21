@@ -8,6 +8,7 @@ import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /****
@@ -131,12 +132,16 @@ public class EmmUserController {
      * @return
      */
     @PostMapping("/login")
-    public Result login(@RequestBody EmmUser emmUser){
+    public Result login(@RequestBody EmmUser emmUser, HttpSession session){
         //调用EmmUserService实现添加EmmUser
         List<EmmUser> list = emmUserService.findList(emmUser);
-        if(list.size() == 0){
+        if(list.size() == 0){//登录失败
             return new Result(true,StatusCode.LOGINERROR,"登录失败：账号或密码错误，请检查您的输入！");
+        }else{//登录成功
+            emmUser = list.get(0);
+            emmUser.setEmpPassword("");
+            session.setAttribute("user", emmUser);
+            return new Result(true,StatusCode.OK,"登录成功");
         }
-        return new Result(true,StatusCode.OK,"登录成功");
     }
 }

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /****
@@ -151,4 +152,42 @@ public class MenuServiceImpl implements MenuService {
     public List<Menu> findAll() {
         return menuMapper.selectAll();
     }
+    /***
+     * 根据角色id查询树形菜单
+     * @return
+     */
+    @Override
+    public List<Menu> getMenuForRole(Integer roleId) {
+        List<Menu> list = menuMapper.getMenuForRole(roleId);
+        List<Menu> result = new ArrayList<Menu>();
+        for(Menu menu : list){
+            if(menu.getLevel().equals(1)){//为1级菜单添加子菜单
+                List<Menu> second = getChildenMenu(menu.getMenuId(),list);
+                for(Menu menu2 : second){//为2级菜单添加子菜单
+                    List<Menu> three = getChildenMenu(menu2.getMenuId(),list);
+                    menu2.setChildren(three);
+                }
+                menu.setChildren(second);
+                result.add(menu);
+            }
+        }
+        return result;
+    }
+
+    /***
+     * 查找子菜单
+     * @param parentId
+     * @return
+     */
+    public List<Menu> getChildenMenu(Integer parentId, List<Menu> allMenu){
+        List<Menu> children = new ArrayList<Menu>();
+        for(Menu menu : allMenu){
+            if(parentId.equals(menu.getParent())){
+                children.add(menu);
+            }
+        }
+        return children;
+    }
+
+
 }
